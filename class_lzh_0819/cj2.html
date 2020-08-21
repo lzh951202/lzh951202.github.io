@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/cj2.css" />
+
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="cont">
+				<input maxlength=6 type="text" class="name" placeholder="请输入姓名" />
+				<input maxlength=3 style="margin: 0 0 0 20px;" type="text" class="cj" placeholder="请输入成绩" />
+				<button class="btn1" type="button">提交</button>
+
+			</div>
+			<ul class="sheet">
+
+
+			</ul>
+		</div>
+	</body>
+	<script src="js/cj2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			var xhh = 1;
+			$(".name").focus();
+			$(".btn1").click(function() {
+				domcreate();
+			})
+			$(".name").keyup(function() {
+				var nm = $(".name").val();
+				if (nm == "") {
+					$(".name").addClass("redborder");
+					return;
+				} else {
+					$(".name").removeClass("redborder")
+				}
+				var n = event.which || event.keyCode
+				if (n == 13) {
+					$(".cj").focus();
+				}
+
+			})
+			$(".cj").keyup(function() {
+				var cjj = $(".cj").val();
+				if (cjj == "") {
+					$(".cj").addClass("redborder");
+					return;
+				} else {
+					$(".cj").removeClass("redborder")
+				}
+				var n = event.which || event.keyCode
+				if (n == 13) {
+					domcreate();
+				}
+			})
+
+			function domcreate() {
+
+				var nm = $(".name").val();
+				var cjj = $(".cj").val();
+				var $li = $("<li></li>");
+				var $xh = $("<span></span>");
+				$xh.text(xhh)
+				xhh = xhh + 1;
+				var $SheetN = $("<span></span>");
+				$SheetN.text("姓名：" + nm);
+				var $SheetC = $("<span></span>");
+				$SheetC.text("成绩：" + cjj);
+				var $SheetX = $("<button class='btn3'type='button'>删除</button>")
+				var $SheetD = $("<button class='btn2'type='button'>修改</button>")
+				$SheetX.click(function() {
+					$(this).parent().remove();
+					$(".name").focus();
+				})
+				$li.append($xh, $SheetN, $SheetC, $SheetX, $SheetD);
+				$(".sheet").append($li)
+
+				$(".name,.cj").val("");
+				$(".name").focus();
+
+
+			}
+
+
+		})
+	</script>
+
+</html>

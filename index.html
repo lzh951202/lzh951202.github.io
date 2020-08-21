@@ -1,65 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/cp.css" />
-
+		<meta charset="utf-8"><link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<title></title>
 	</head>
 	<body>
 		<div class="container">
+			
 			<div class="content">
-				<img class="ico" src="img/ssq.png">
-				<img class="img1" src="img/yaojiang.jpg">
-				<img class="img2" src="img/yaojiang.gif?+${new Date().getTime()}">
-				<!-- <img class="img3" src="img/yaojiang3.jpg"> -->
-				<div class="h20"></div>
-				<p class="title">模拟双色球开奖</p>
-				<button class="random">产生</button>
-				<ul class="sheet">
-
+				
+				<div class="h30"></div>
+				<p class="Title">个人小作品展示（多为半成品未做完）</p>
+				<ul class="con1">
+					<li><a href="class_lzh_0820/cp.html"><img src="img/ssq.png" ><p class="ssq">模拟双色球摇奖系统</p></a></li>
+					<li><a href="class_lzh_0819/cj2.1.html" class="lr"><img src="img/ssq.png" ><p class="ssq">成绩录入系统</p></a></li>
+					<li><a href="ztbj_lzh_0815/index.html" class="zt"><img src="img/ssq.png" ><p class="ssq">简易整体布局</p></a></li>
 				</ul>
-				<p class="warning">本网页仅供娱乐</p>
-
 			</div>
-
 		</div>
 	</body>
-	<script src="js/lx.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$(function() {
-			$(".random").click(function() {
-				$(".img1").hide();
-				$(".img2").show();
-				setTimeout(function() {
-					var $li = $("<li></li>");
-					$(".sheet").html("")
-					for (var i = 0; i < 6; i++) {
-						var a = make(37, 1);
-						var $sz = $("<span></span>");
-						$sz.text(a);
-						$li.append($sz);
-					}
-					var b = make(16, 1);
-					var $szz = $("<span></span>");
-					$szz.text(b);
-					$li.append($szz);
-					$(".sheet").append($li)
-					
-				}, 13 * 1000);
-				
-			})
-
-			function make(x, y) {
-				var i = Math.floor(Math.random() * x + y);
-				if (i < 10) {
-					i = "0" + i;
-				}
-				return i;
-			}
-
-
-
-		})
-	</script>
 </html>

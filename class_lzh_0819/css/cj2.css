@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑", arial;
+}
+
+button,
+input,
+select,
+textarea,
+p {
+	outline: none;
+}
+
+.container {
+	width: 1000px;
+	height: 2000px;
+	background: #b9d8ff;
+	margin: 0 auto;
+	position: relative;
+}
+
+.cont>input {
+	float: left;
+	width: 300px;
+	height: 40px;
+	margin: 0 0 0 140px;
+	border: 2px solid #367ab7;
+	border-radius: 10px;
+	font-size: 30px;
+	color: black;
+	text-indent: 20px;
+
+
+}
+
+.btn1 {
+	float: left;
+	width: 60px;
+	height: 44px;
+	border: 0;
+	border-radius: 10px;
+	background: #367ab7;
+	margin: 0 0 0 20px;
+	color: white;
+	cursor: pointer;
+}
+
+
+.cont {
+	float: left;
+	width: 1000px;
+	height: 50px;
+	/* background: yellow; */
+	margin: 50px 0 80px 0;
+}
+
+.sheet {
+	float: left;
+	margin: 0 0 0 140px;
+}
+
+.sheet>li {
+	float: left;
+	width: 705px;
+	height: 50px;
+	background: white;
+	border: 2px solid #367AB7;
+	border-radius: 10px;
+	margin: 0 0 20px 0;
+	font-size: 20px;
+	color: black;
+	line-height: 50px;
+	list-style: none;
+
+}
+
+/* .sheet>li:nth-child(1)>span:nth-child(1) {
+	color: #e64340;
+}
+.sheet>li:nth-child(2)>span:nth-child(1) {
+	color: #e64340;
+}
+.sheet>li:nth-child(3)>span:nth-child(1) {
+	color: #e64340;
+} */
+.btn2 {
+	float: right;
+	width: 60px;
+	height: 44px;
+	border: 0;
+	border-radius: 10px;
+	background: #5bb85d;
+	margin: 3px 0 0 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.btn3 {
+	float: right;
+	width: 60px;
+	height: 44px;
+	border: 0;
+	border-radius: 10px;
+	background: #d9544d;
+	margin: 3px 20px 0 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.sheet>li>span:nth-child(1) {
+	float: left;
+	display: block;
+	height: 50px;
+	width: 50px;
+	background: white;
+	border: 2px solid #367AB7;
+	border-radius: 50%;
+	margin: 0 0 0 -70px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 900;
+
+
+}
+
+.sheet>li>span:nth-child(2) {
+	float: left;
+	width: 150px;
+	margin: 0 0 0 20px;
+}
+
+.sheet>li>span:nth-child(3) {
+	float: left;
+	width: 150px;
+	margin: 0 0 0 180px;
+}
+
+.redborder {
+	border-color: red !important;
+}
+.layered{
+	display: none;
+	position: fixed;
+	width: 1000px;
+	height: 1000px;
+	background: rgba(0,0,0,0.3);
+}
+.namel{
+	float: left;
+	width: 300px;
+	height: 40px;
+	margin: 200px 0 0 180px;
+	border: 2px solid #367ab7;
+	border-radius: 10px;
+	font-size: 30px;
+	color: black;
+	text-indent: 20px;
+}
+.cjl{
+	float: left;
+	width: 300px;
+	height: 40px;
+	
+	border: 2px solid #367ab7;
+	border-radius: 10px;
+	font-size: 30px;
+	color: black;
+	text-indent: 20px;
+}
+.btn4{
+	float: left;
+	width: 60px;
+	height: 44px;
+	border: 0;
+	border-radius: 10px;
+	background: #5cb95e;
+	margin: 0 0 0 20px;
+	color: white;
+	cursor: pointer;
+}
+.btn5{
+	float: left;
+	width: 60px;
+	height: 44px;
+	border: 0;
+	border-radius: 10px;
+	background: #f0ac49;
+	margin: 0 0 0 20px;
+	color: white;
+	cursor: pointer;
+}

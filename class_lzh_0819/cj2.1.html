@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/cj2.css" />
+
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="cont">
+				<input maxlength=6 type="text" class="name" placeholder="请输入姓名" />
+				<input maxlength=3 style="margin: 0 0 0 20px;" type="text" class="cj" placeholder="请输入成绩" />
+				<button class="btn1" type="button">提交</button>
+
+			</div>
+			<ul class="sheet">
+				<li><span>~</span><span>姓名</span><span>成绩</span></li>
+
+			</ul>
+			<div class="layered">
+				<input maxlength=6 type="text" class="namel" placeholder="请输入姓名" />
+				<input maxlength=3 style="margin: 200px 0 0 20px;" type="text" class="cjl" placeholder="请输入成绩" />
+				<button style="margin: 350px 0 0 -440px;" class="btn4" type="button">确认</button>
+				<button style="margin: 350px 0 0 -250px;" class="btn5" type="button">取消</button>
+			</div>
+		</div>
+	</body>
+	<script src="js/cj2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			var xhh = 1;
+			var lin = 0;
+			$(".name").focus();
+			$(".btn1").click(function() {
+				var nm = $(".name").val();
+				var cjj = $(".cj").val();
+				if (nm == "") {
+					$(".name").addClass("redborder");
+					$(".name").focus();
+					return;
+
+				} else {
+					$(".name").removeClass("redborder")
+				}
+				if (cjj == "") {
+					$(".cj").addClass("redborder");
+					$(".cj").focus();
+					return;
+				} else {
+					$(".cj").removeClass("redborder")
+				}
+				domcreate();
+			})
+			$(".name").keyup(function() {
+				var nm = $(".name").val();
+				if (nm == "") {
+					$(".name").addClass("redborder");
+					return;
+				} else {
+					$(".name").removeClass("redborder")
+				}
+				var n = event.which || event.keyCode
+				if (n == 13) {
+					$(".cj").focus();
+				}
+
+			})
+			$(".cj").keyup(function() {
+				var cjj = $(".cj").val();
+				console.log(cjj)
+				if (cjj == "") {
+					$(".cj").addClass("redborder");
+					return;
+				} else {
+					$(".cj").removeClass("redborder")
+				}
+				var n = event.which || event.keyCode
+				if (n == 13) {
+					domcreate();
+				}
+			})
+			// $(".cj").keydown(function() {
+			// 	var cjjj = $(".cj").val();
+			// 	console.log(cjjj)
+			// 	})
+			//限制输入内容为数字？
+			function domcreate() {
+
+				var nm = $(".name").val();
+				var cjj = $(".cj").val();
+				var $li = $("<li></li>");
+				var $xh = $("<span></span>");
+				$xh.text(xhh)
+				xhh = xhh + 1;
+				var $SheetN = $("<span></span>");
+				$SheetN.text(nm);
+				var $SheetC = $("<span></span>");
+				$SheetC.text(cjj);
+				var $SheetX = $("<button class='btn3'type='button'>删除</button>")
+				var $SheetD = $("<button class='btn2'type='button'>修改</button>")
+				$SheetX.click(function() {
+					$(this).parent().remove();
+					$(".name").focus();
+				})
+				$SheetD.click(function() {
+					$(".layered").show()
+					$(".namel").focus();
+					lin = $(this).parent().index();
+					var nmm = $(this).prev().prev().prev().text();
+					$(".namel").val(nmm);
+					var xcj = $(this).prev().prev().text();
+					$(".cjl").val(xcj);
+					$(".btn4").click(function() {
+						xiugai()
+					})
+
+					function xiugai() {
+						$(".layered").hide()
+						var nmmm = $(".namel").val()
+						var cjjj = $(".cjl").val()
+						$(".sheet>li").eq(lin).find("span").eq(1).text(nmmm)
+						$(".sheet>li").eq(lin).find("span").eq(2).text(cjjj)
+					}
+					$(".namel").keyup(function() {
+						var nmk = $(".namel").val();
+						if (nmk == "") {
+							$(".namel").addClass("redborder");
+							return;
+						} else {
+							$(".namel").removeClass("redborder")
+						}
+						var nn = event.which || event.keyCode
+						if (nn == 13) {
+							$(".cjl").focus();
+						}
+						if (nn == 27) {
+							$(".layered").hide()
+							$(".name").focus();
+						}
+					})
+					$(".cjl").keyup(function() {
+						var cjjk = $(".cjl").val();
+						if (cjjk == "") {
+							$(".cjl").addClass("redborder");
+							return;
+						} else {
+							$(".cjl").removeClass("redborder")
+						}
+						var nnn = event.which || event.keyCode
+						if (nnn == 13) {
+							xiugai()
+							$(".name").focus();
+						}
+						if (nnn == 27) {
+							$(".layered").hide()
+							$(".name").focus();
+						}
+					})
+					$(".btn5").click(function() {
+						$(".layered").hide()
+						$(".name").focus();
+					})
+
+				})
+				$li.append($xh, $SheetN, $SheetC, $SheetX, $SheetD);
+				$(".sheet").append($li)
+
+				$(".name,.cj").val("");
+				$(".name").focus();
+
+
+			}
+
+
+		})
+	</script>
+
+</html>
