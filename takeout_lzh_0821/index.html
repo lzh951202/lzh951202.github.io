@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/takeout.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<img class="back" src="img/下载.png">
+				<img class="road1" src="img/road.png">
+				<img class="road2" src="img/road.png">
+				<img class="body" src="img/rider1.a0c2acc.png">
+				<img class="body1" src="img/rider2.2c04be9.png">
+				<img class="light" src="img/light.png">
+				<ul class="sheet">
+
+				</ul>
+			</div>
+
+		</div>
+	</body>
+	<script src="js/wm.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			var a = 100
+			$(".body").click(function() {
+				$(".road1").addClass("roadspeedup");
+				$(".road2").addClass("roadspeedup");
+				$(".light").addClass("lightspeedup");
+				$(".body").hide();
+				$(".body1").show()
+				setTimeout(function() {
+					$(".road1").removeClass("roadspeedup").addClass("road1");
+					$(".road2").removeClass("roadspeedup").addClass("road2");
+					$(".light").removeClass("lightspeedup").addClass("light");
+					$(".body").show();
+					$(".body1").hide();
+
+				}, 1.9 * 1000);
+				var $li = $("<li></li>")
+				var $sp = $("<span></span>")
+				var $text = $("<span class='black'>别看了，就是你，黑鬼快去拿外卖</span>")
+				var i = Math.floor(Math.random() * 100);
+				if (i < a) {
+					a = i
+					$(".sheet>li").find(".black").remove()
+					$sp.text(i)
+					$li.append($sp,$text)
+					$(".sheet").append($li)
+				}
+				else{
+					$sp.text(i)
+					$li.append($sp)
+					$(".sheet").append($li)
+				}
+				
+				
+			})
+		})
+	</script>
+</html>
