@@ -24,6 +24,7 @@
 	<script src="js/wm.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
+			var x = 0;
 			var a = 100
 			$(".body").click(function() {
 				$(".road1").addClass("roadspeedup");
@@ -40,23 +41,27 @@
 
 				}, 1.9 * 1000);
 				var $li = $("<li></li>")
-				var $sp = $("<span></span>")
-				var $text = $("<span class='black'>别看了，就是你，黑鬼快去拿外卖</span>")
+				var $sp = $("<span class='hanbao'></span>")
+				var $text = $("<span class='black'>别看了，就是你，黑鬼快去拿外卖 </span>")
 				var i = Math.floor(Math.random() * 100);
+				var $px = $("<span class='pxnum'><span>")
 				if (i < a) {
+					x = x + 1;
+					$px.text(x);
 					a = i
 					$(".sheet>li").find(".black").remove()
 					$sp.text(i)
-					$li.append($sp,$text)
+					$li.append($sp, $text,$px)
 					$(".sheet").append($li)
-				}
-				else{
+				} else {
+					x = x + 1;
+					$px.text(x);
 					$sp.text(i)
-					$li.append($sp)
+					$li.append($sp,$px)
 					$(".sheet").append($li)
 				}
-				
-				
+
+
 			})
 		})
 	</script>

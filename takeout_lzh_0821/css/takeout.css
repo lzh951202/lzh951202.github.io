@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "微软雅黑",arial;
+	font-family: "微软雅黑", arial;
 }
 
 .container {
@@ -29,6 +29,7 @@
 	vertical-align: top;
 	animation: leftroad 2s infinite linear;
 }
+
 .road2 {
 	width: 500px;
 	vertical-align: top;
@@ -38,6 +39,7 @@
 	vertical-align: top;
 	animation: leftroad 2s infinite linear;
 }
+
 .light {
 	height: 250px;
 	position: absolute;
@@ -46,12 +48,15 @@
 	vertical-align: top;
 	animation: light 2.8s infinite linear;
 }
-.roadspeedup{
+
+.roadspeedup {
 	animation: leftroad 1s infinite linear;
 }
-.lightspeedup{
+
+.lightspeedup {
 	animation: light 1.4s infinite linear;
 }
+
 @keyframes leftroad {
 	from {
 		transform: translateX(0);
@@ -62,6 +67,7 @@
 		;
 	}
 }
+
 @keyframes light {
 	from {
 		transform: translateX(0);
@@ -84,7 +90,8 @@
 	z-index: 999;
 	animation: daixiahu 1s infinite linear alternate;
 }
-.body1{
+
+.body1 {
 	display: none;
 	height: 200px;
 	position: absolute;
@@ -94,40 +101,89 @@
 	z-index: 999;
 	animation: daixiahu 1s infinite linear alternate;
 }
-@keyframes daixiahu{
-	from{transform: scale(1);}
-	to{transform: scale(0.9);}
+
+@keyframes daixiahu {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(0.9);
+	}
 }
-.sheet{
+
+.sheet {
 	list-style: none;
 	float: left;
 	margin: 30px;
 }
-.sheet>li{
+
+.sheet>li {
 	float: left;
-	width: 600px;
+	width: 450px;
 	height: 50px;
-	margin: 10px 0 0 0 ;
+	margin: 10px 0 0 0;
 	line-height: 50px;
 	text-align: center;
 }
-.sheet>li>span:nth-child(1){
+
+.sheet>li>span:nth-child(1) {
 	float: left;
 	width: 50px;
 	height: 50px;
 	background-color: aqua;
 	border-radius: 50%;
 }
-.sheet>li>span:nth-child(2){
+
+.sheet>li>span:nth-child(2) {
 	float: left;
-	width: 300px;height: 50px;
-	float: left;
-}
-.black{
-	float: left;
-	font-size: 18px;
+	width: 330px;
+	height: 50px;
 	margin: 0 0 0 20px;
+	text-align: left;
 }
-.show{
+
+.black {
+
+	font-size: 18px;
+	background-image: url(../img/fei.jpg);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: right;
+
+}
+
+.show {
 	display: block;
+}
+
+.hanbao {
+	background-image: url(../img/hanbao.png);
+	background-size: 50px 50px;
+	font-size: 24px;
+	color: firebrick;
+	font-weight: 900;
+	animation: hbdown .8s 1;
+}
+
+@keyframes hbdown {
+	from {
+		transform: translateX(-50px);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+.pxnum {
+	float: right !important;
+	width: 30px !important;
+	height: 30px !important;
+	background-color: darkgray;
+	border-radius: 50%;
+	line-height: 30px;
+	/* margin-top: 10px; */
+	color: white;
+	text-align: center!important;
 }
