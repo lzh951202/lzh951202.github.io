@@ -1,36 +1,40 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
-	font-family: "微软雅黑",arial;
-}
-.container{
-width: 100%;
-height:auto;
-position: relative;
-}
-.backg{
-	float: left;
-	height: 1200px;
-	position: absolute;
-	left: 820px;
-	z-index: -1;
+	font-family: "微软雅黑", arial;
 }
 
-.content{
-	
+.container {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.backg {
+	float: left;
+	height: 1200px;
+	z-index: -1;
+	position: absolute;
+	left: 220px;
+}
+
+.content {
 	width: 1000px;
 	height: 1200px;
+	background: url(../img/back.jpg) no-repeat center top;
 	margin: 0 auto;
 }
-.h40{
+
+.h40 {
 	height: 40px;
 	background: #367AB7;
 }
-.h30{
+
+.h30 {
 	height: 30px;
-	
 }
-.Title{
+
+.Title {
 	width: 800px;
 	height: 150px;
 	margin: 0 auto;
@@ -39,24 +43,28 @@ position: relative;
 	line-height: 50px;
 	text-align: center;
 }
-.Title>img{
+
+.Title>img {
 	height: 200px;
 }
-.con1>li{
+
+.con1>li {
 	float: left;
 	width: 220px;
 	height: auto;
 	/* background-color: rgba(0,0,0,0.3); */
-	border: 5px solid #eeeeee ;
+	border: 5px solid #eeeeee;
 	border-radius: 20px;
 	margin: 100px 0 0 180px;
 	/* background: yellow; */
 	list-style: none;
 }
-.con1>li>a{
+
+.con1>li>a {
 	text-decoration: none;
 }
-.con1>li>a>img{
+
+.con1>li>a>img {
 	width: 200px;
 	height: 200px;
 	margin: 10px;
@@ -64,15 +72,16 @@ position: relative;
 	border-bottom: 5px solid #eeeeee;
 	vertical-align: top;
 }
-.ssq{
+
+.ssq {
 	width: 200px;
 	height: 50px;
 	background: #347ab6;
-	margin: 20px 0 25px 10px ;
+	margin: 20px 0 25px 10px;
 	font-size: 20px;
 	color: white;
 	text-align: center;
 	line-height: 50px;
 	border-radius: 25px;
-	
+
 }
