@@ -1,9 +1,10 @@
-*{
-	margin: 0 ;
+* {
+	margin: 0;
 	padding: 0;
 	font-family: "微软雅黑"，arial;
-	
+
 }
+
 button,
 input,
 select,
@@ -78,6 +79,7 @@ img {
 .register:active {
 	color: #FF0000;
 }
+
 .Shuffling {
 	width: 100%;
 }
@@ -89,59 +91,142 @@ img {
 	height: auto;
 	vertical-align: top;
 }
-.conmid{
-	width: 100px%;
-	height: 2036px;
+
+.conmid {
+	width: 100%;
+	height: auto;
 }
 
+.midtitle {
+	/* float: left; */
+	margin: 36px 0 0 360px;
+	font-size: 32px;
+	
+}
+
+.midtitle>a {
+	color: #626262;
+	text-decoration: none;
+}
+
+.concept_text {
+	float: left;
+}
+.concept_text1 {
+	color: #ff2c66;
+}
+.concept {
+	width: 1180px;
+	height: 1800px;
+	/* background-color: yellow; */
+	/* margin: 0 auto; */
+	position: relative;
+}
+.sq1{
+	float: left;
+	width: 305px;
+	height: 770px;
+	background: linear-gradient(to bottom,#ff5b3d,#ff2c66);
+	
+}
+.sq11{
+	margin: 69px 0 0 0;
+	font-size: 57px;
+	color: white;
+	text-align: center;
+	font-weight: 900;
+}
+.sq12{
+	margin: 112px 0 0 0;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+.concept>img {
+	float: left;
+	vertical-align: top;
+}
+
+.concept>img:nth-child(2),
+.concept>img:nth-child(3),
+.concept>img:nth-child(4),
+.concept>img:nth-child(5),
+.concept>img:nth-child(7) {
+	width: 427px;
+	height: 385px;
+}
+.concept>img:nth-child(6){
+	width: 732px;
+	height: 385px;
+}
+.concept>img:nth-child(8){
+	width: 480px;
+	height: 318px;
+}
+.concept>img:nth-child(9){
+	width: 679px;
+	height: 636px;
+}
+.concept>img:nth-child(10){
+	width: 480px;
+	height: 318px;
+	position: absolute;
+	top: 1473px;
+	left: 0;
+}
 .footer {
-	min-width: 1921px;
+	min-width: 100%;
 	width: 100%;
 	height: 266px;
 }
 
 .conf {
-	width: 1930px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 
 .talk {
 	float: left;
-	width: 1920px;
+	min-width: 1200px;
+	width: 100%;
 	height: 266px;
 	background: #292929;
 }
+
 .talka {
 	float: left;
-	width: 361px;
+	width: 10%;
 	height: 200px;
 	margin: 55px 0 0 0px;
-	padding: 0 0 0 170px;
+	padding: 0 0 0 120px;
 	/* background: yellow; */
 
 }
-.talka>li{
+
+.talka>li {
 	list-style: none;
 	line-height: 35px;
 }
-.talka>li>a{
+
+.talka>li>a {
 	text-decoration: none;
 	color: #737373;
 }
+
 .talk1 {
 	float: left;
-	width: 372px;
+	width: 30%;
 	height: 200px;
 	margin: 32px 0 0 0px;
-	padding: 0 0 0 159px;
+	padding: 0 0 0 120px;
 	/* background: yellow; */
 	border-left: 2px solid #393939;
 }
 
 .talk2 {
 	float: left;
-	width: 531px;
+	width: 30%;
 	height: 200px;
 	margin: 32px 0 0 0;
 	/* background: yellow; */
@@ -187,4 +272,8 @@ img {
 	font-size: 12px;
 	color: #737373;
 
+}
+
+.concept {
+	margin: 0 auto;
 }
