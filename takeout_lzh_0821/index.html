@@ -51,16 +51,18 @@
 					a = i
 					$(".sheet>li").find(".black").remove()
 					$sp.text(i)
-					$li.append($sp, $text,$px)
+					$li.append($sp, $text, $px)
 					$(".sheet").append($li)
 				} else {
 					x = x + 1;
 					$px.text(x);
 					$sp.text(i)
-					$li.append($sp,$px)
+					$li.append($sp, $px)
 					$(".sheet").append($li)
 				}
-
+				if (x > 5) {
+					$(".sheet>li").eq(0).remove();
+				}
 
 			})
 		})
