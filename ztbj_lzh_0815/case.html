@@ -161,7 +161,7 @@
 								<a href=""><img src="img/dlzc/xt1.jpg"></a>
 								<a href=""><img src="img/dlzc/xt2.jpg"></a>
 								<a href=""><img src="img/dlzc/xt3.jpg"></a>
-								<a href class="now">立即注册</a>
+								<a href="####" class="now">立即注册</a>
 							</div>
 						</div>
 					</div>
@@ -177,7 +177,7 @@
 					</div>
 					<div class="psb">
 						<input class="autosq" type="checkbox" name="" id="zddl" value="" />
-						<label for="zddl" class="auto" l>下次自动登录</label>
+						<label for="zddl" class="auto">下次自动登录</label>
 					</div>
 					<input class="dlan" type="submit" name="" id="" value="登录" />
 					<div class="wenti">
@@ -186,11 +186,41 @@
 							<a href=""><img src="img/dlzc/xt1.jpg"></a>
 							<a href=""><img src="img/dlzc/xt2.jpg"></a>
 							<a href=""><img src="img/dlzc/xt3.jpg"></a>
-							<a href class="now">立即注册</a>
+							<a href="####" class="now">立即注册</a>
 						</div>
 					</div>
 				</div>
-
+			
+			</div>
+			<div class="login">
+				<img class="X" src="./img/dlzc/X.jpg">
+				<div class="h56"></div>
+				<div class="logtext">
+					<p class="logn">用户名</p>
+					<input class="logtt" type="text" name="" placeholder="请设置用户名" />
+				</div>
+				<div class="logtext">
+					<p class="logn">手机号</p>
+					<input class="logtt" type="text" name="" placeholder="可用于登录和找回密码" />
+				</div>
+				<div class="logtext">
+					<p class="logn">验证码</p>
+					<input class="logtt" type="text" name="" placeholder="请输入验证码" />
+				</div>
+				<div class="logtext ">
+					<p class="logn lognn">密码</p>
+					<input class="logtt" type="password" name="" placeholder="请设置登录密码" />
+				</div>
+				<input class="autosq auto2" type="checkbox" name="" id="zddl1" value="" />
+				<label for="zddl1" class="auto">下次自动登录</label>
+				<input class="dlan zcdl" type="submit" name="" id="" value="注册" />
+			</div>
+			<div class="loginsuc">
+				<img class="X" src="./img/dlzc/X.jpg">
+				<img class="suc_circle" src="img/dlzc/loginsuc.png">
+				<p class="suc1">注册成功</p>
+				<p class="suc2">注册成功</p>
+				<button class="ok" type="button">OK</button>
 			</div>
 	</body>
 	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
@@ -205,12 +235,23 @@
 			})
 			$(".X").click(function() {
 				$(".loadBox").hide();
+				$(".login").removeClass("loginshow");
+				$(".loginsuc").removeClass("loginshow");
+			})
+			$(".ok").click(function() {
+				$(".loginsuc").removeClass("loginshow");
+				$(".login").removeClass("loginshow");
+				$(".loadBox").hide();
 			})
 			$(".register").click(function() {
 				$(".loadBox").show();
 			})
-
-
+			$(".now").click(function() {
+				$(".login").addClass("loginshow");
+			})
+			$(".zcdl").click(function() {
+				$(".loginsuc").addClass("loginshow");
+			})
 
 		})
 	</script>

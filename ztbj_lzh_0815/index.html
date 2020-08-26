@@ -26,13 +26,19 @@
 			</div>
 			<div class="content">
 				<div class="shufb">
-					<div class="Shuffling">
-						<img src="img/shuffling1.jpg" class="Pic_Shuf1">
-						<img src="img/al/al2/dt2.jpg" class="Pic_Shuf1">
-						<img src="img/al/dt.jpg" class="Pic_Shuf1">
-						<img src="img/shuffling1.jpg" class="Pic_Shuf1">
-<div class="clear"></div>
-					</div>
+					<ul class="Shuffling">
+						<li><img src="img/shuffling1.jpg" class="Pic_Shuf1"></li>
+						<li><img src="img/al/al2/dt2.jpg" class="Pic_Shuf1"></li>
+						<li><img src="img/al/dt.jpg" class="Pic_Shuf1"></li>
+						<li><img src="img/shuffling1.jpg" class="Pic_Shuf1"></li>
+					</ul>
+					<button class="left"><img src="img/arrow-left-bold.png"></button>
+					<button class="right"><img src="img/arrow-right-bold.png"></button>
+					<ul class="dot">
+						<li class="choose"></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</div>
 
 			</div>
@@ -135,7 +141,7 @@
 						<input class="send" type="submit" name="" value="发送" />
 					</div>
 				</div>
-
+<div class="h500"></div>
 				<div class="talk">
 					<ul class="talka">
 						<li><a href="index.html">首页</a></li>
@@ -144,26 +150,25 @@
 						<li><a href="index.html">展示平台</a></li>
 						<li><a href="index.html">联系我们</a></li>
 					</ul>
+					<div class="talk1">
+						<p class="t11">其他平台联系我们</p>
+						<img src="img/lianxi1.jpg">
+						<img src="img/lianxi2.jpg">
+						<img src="img/lianxi3.jpg">
+						<img src="img/lianxi4.jpg">
+						<p class="t12">订阅信息</p>
+						<input type="text" name="" id="dingyue" value="输入您需要订阅的信息" />
+						<button class="tijiao" type="button">GO</button>
+					</div>
+					<div class="talk2">
+						<img src="./img/idesign2.png">
+						<p class="bbbb">Copyright ©2013-2017,chengzhushuo.com</p>
+					</div>
 				</div>
-				<div class="talk1">
-					<p class="t11">其他平台联系我们</p>
-					<img src="img/lianxi1.jpg">
-					<img src="img/lianxi2.jpg">
-					<img src="img/lianxi3.jpg">
-					<img src="img/lianxi4.jpg">
-					<p class="t12">订阅信息</p>
-					<input type="text" name="" id="dingyue" value="输入您需要订阅的信息" />
-					<button class="tijiao" type="button">GO</button>
-				</div>
-				<div class="talk2">
-					<img src="./img/idesign2.png">
-					<p class="bbbb">Copyright ©2013-2017,chengzhushuo.com</p>
-				</div>
+				
+				
 			</div>
 		</div>
-
-		</div>
-
 		<div class="loadBox">
 			<img class="X" src="./img/dlzc/X.jpg">
 			<div class="loadtext">
@@ -182,7 +187,7 @@
 							<a href=""><img src="img/dlzc/xt1.jpg"></a>
 							<a href=""><img src="img/dlzc/xt2.jpg"></a>
 							<a href=""><img src="img/dlzc/xt3.jpg"></a>
-							<a href class="now">立即注册</a>
+							<a href="####" class="now">立即注册</a>
 						</div>
 					</div>
 				</div>
@@ -207,7 +212,7 @@
 						<a href=""><img src="img/dlzc/xt1.jpg"></a>
 						<a href=""><img src="img/dlzc/xt2.jpg"></a>
 						<a href=""><img src="img/dlzc/xt3.jpg"></a>
-						<a href class="now">立即注册</a>
+						<a href="####" class="now">立即注册</a>
 					</div>
 				</div>
 			</div>
@@ -243,7 +248,7 @@
 			<p class="suc2">注册成功</p>
 			<button class="ok" type="button">OK</button>
 		</div>
-		</div>
+		
 	</body>
 	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
@@ -257,11 +262,13 @@
 			})
 			$(".X").click(function() {
 				$(".loadBox").hide();
-				$(".login").hide();
-				$(".loginsuc").hide();
+				$(".login").removeClass("loginshow");
+				$(".loginsuc").removeClass("loginshow");
 			})
 			$(".ok").click(function() {
-				$(".loginsuc").hide();
+				$(".loginsuc").removeClass("loginshow");
+				$(".login").removeClass("loginshow");
+				$(".loadBox").hide();
 			})
 			$(".register").click(function() {
 				$(".loadBox").show();
@@ -269,8 +276,65 @@
 			$(".now").click(function() {
 				$(".login").addClass("loginshow");
 			})
-			$(".czdl").click(function() {
+			$(".zcdl").click(function() {
 				$(".loginsuc").addClass("loginshow");
+			})
+			var s = 0
+			var timer
+			$(".right").click(function() {
+
+				s++
+				xunhuan()
+
+			})
+			$(".left").click(function() {
+				s--
+				xunhuan()
+			})
+
+			function xunhuan() {
+
+				if (s == 4) {
+					$(".Shuffling").css({
+						"left": 0
+
+					})
+					s = 1
+				}
+				if (s == -1) {
+					$(".Shuffling").css({
+						"left": -3600
+
+					})
+					s = 2
+				}
+
+				$(".Shuffling").stop().animate({
+					"left": -s * 1200
+				}, 500)
+				if (s == 3) {
+					$(".dot>li").eq(0).addClass("choose").siblings().removeClass("choose")
+				} else {
+					$(".dot>li").eq(s).addClass("choose").siblings().removeClass("choose")
+				}
+			}
+			walk()
+
+			function walk() {
+				timer = setInterval(function() {
+					s++
+					xunhuan()
+				}, 2500)
+			}
+			$(".shufb").hover(function() {
+				clearInterval(timer)
+			}, function() {
+				walk()
+			})
+			$(".dot>li").click(function() {
+				s = $(this).index()
+
+				xunhuan()
 			})
 		})
 	</script>

@@ -391,3 +391,97 @@ img {
 .wenti2{
 	margin:190px 0 0 82px;
 }
+.login {
+	display: none;
+	width: 543px;
+	height: 466px;
+	background: white;
+	border: 1px solid black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -233px;
+}
+
+.h56 {
+	height: 56px;
+}
+
+.logtext {
+	width: 542px;
+	height: 78px;
+	margin: 0 0 0 83px;
+}
+
+.logn {
+	float: left;
+	font-size: 16px;
+	line-height: 38px;
+
+}
+
+.lognn {
+	margin: 0 17px 0 0;
+}
+
+.logtt {
+	float: left;
+	width: 298px;
+	height: 38px;
+	margin: 0 0 0 40px;
+	border: 1px solid #cecece;
+	text-indent: 10px;
+}
+
+.auto2 {
+	margin: 0 0 0 162px;
+}
+
+.zcdl {
+	width: 390px;
+	margin: 21px 0 0 85px;
+}
+
+.loginshow {
+	display: block !important;
+}
+
+.loginsuc {
+	display: none;
+	width: 543px;
+	height: 466px;
+	background: white;
+	border: 1px solid black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -233px;
+}
+
+.suc_circle {
+	margin: 52px 0 0 200px;
+}
+
+.suc1 {
+	margin: 60px 0 0 0;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.suc2 {
+	margin: 60px 0 0 0;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+}
+
+.ok {
+	width: 80px;
+	height: 40px;
+	background: linear-gradient(to right, #ff4a7b, #ff6e53);
+	border: 0;
+	margin: 39px 0 0 232px;
+	color: white;
+	cursor: pointer;
+}

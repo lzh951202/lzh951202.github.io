@@ -20,7 +20,7 @@
 						<li><a href="index.html" class="">联系我们</a></li>
 						<li><a href="index.html" class="">展示平台</a></li>
 					</ul>
-					<button type="button" class="register">登录/注册</button>
+					<button type="button" class="register">登录／注册</button>
 				</div>
 			</div>
 			<div class="content">
@@ -36,8 +36,17 @@
 					</div>
 					<div class="concept">
 						<div class="sq1">
-							<p class="sq11">案例设计<br>理念</p>
-							<p class="sq12">整理出一些作品分享给大家<br>感谢过去一年和大家一同的成长<br>感恩生命带给我的每一次感动<br><br>不管前方的路有多苦<br>只要走的方向正确不管多么崎岖不平都比站在原地更接近幸福</p>
+							<p class="sq11">案例设计<br>
+								理念
+							</p>
+							<p class="sq12">整理出一些作品分享给大家<br>
+								感谢过去一年和大家一同的成长<br>
+								感恩生命带给我的每一次感动<br>
+								<br>
+								不管前方的路有多苦<br>
+								只要走的方向正确
+								不管多么崎岖不平
+								都比站在原地更接近幸福</p>
 						</div>
 						<img src="img/al/al2/xt1.jpg">
 						<img src="img/al/al2/xt2.jpg">
@@ -80,6 +89,117 @@
 				</div>
 
 			</div>
+			<div class="loadBox">
+				<img class="X" src="./img/dlzc/X.jpg">
+				<div class="loadtext">
+					<p class="loadin">扫一扫登录</p>
+					<p>账号登录</p>
+				</div>
+				<div class="idpass idpasss">
+					<div class="twm">
+						<div class="pst pstt">
+							<img src="img/dlzc/tweima.jpg">
+							<p class="sjs">请使用<span>手机 APP</span>扫描登录</p>
+						</div>
+						<div class="wenti wenti2">
+							<!-- <a href="" class="wentit">登录遇到问题</a> -->
+							<div class="zf">
+								<a href=""><img src="img/dlzc/xt1.jpg"></a>
+								<a href=""><img src="img/dlzc/xt2.jpg"></a>
+								<a href=""><img src="img/dlzc/xt3.jpg"></a>
+								<a href="####" class="now">立即注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="idpass">
+					<div class="pst">
+						<img class="userp" src="./img/dlzc/dl.png">
+						<input class="user" type="text" name="" id="" />
+					</div>
+					<div class="psm">
+						<img class="passwp" src="./img/dlzc/mm.png">
+						<input class="user" type="password" name="" />
+					</div>
+					<div class="psb">
+						<input class="autosq" type="checkbox" name="" id="zddl" value="" />
+						<label for="zddl" class="auto">下次自动登录</label>
+					</div>
+					<input class="dlan" type="submit" name="" id="" value="登录" />
+					<div class="wenti">
+						<a href="" class="wentit">登录遇到问题</a>
+						<div class="zf">
+							<a href=""><img src="img/dlzc/xt1.jpg"></a>
+							<a href=""><img src="img/dlzc/xt2.jpg"></a>
+							<a href=""><img src="img/dlzc/xt3.jpg"></a>
+							<a href="####" class="now">立即注册</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="login">
+				<img class="X" src="./img/dlzc/X.jpg">
+				<div class="h56"></div>
+				<div class="logtext">
+					<p class="logn">用户名</p>
+					<input class="logtt" type="text" name="" placeholder="请设置用户名" />
+				</div>
+				<div class="logtext">
+					<p class="logn">手机号</p>
+					<input class="logtt" type="text" name="" placeholder="可用于登录和找回密码" />
+				</div>
+				<div class="logtext">
+					<p class="logn">验证码</p>
+					<input class="logtt" type="text" name="" placeholder="请输入验证码" />
+				</div>
+				<div class="logtext ">
+					<p class="logn lognn">密码</p>
+					<input class="logtt" type="password" name="" placeholder="请设置登录密码" />
+				</div>
+				<input class="autosq auto2" type="checkbox" name="" id="zddl1" value="" />
+				<label for="zddl1" class="auto">下次自动登录</label>
+				<input class="dlan zcdl" type="submit" name="" id="" value="注册" />
+			</div>
+			<div class="loginsuc">
+				<img class="X" src="./img/dlzc/X.jpg">
+				<img class="suc_circle" src="img/dlzc/loginsuc.png">
+				<p class="suc1">注册成功</p>
+				<p class="suc2">注册成功</p>
+				<button class="ok" type="button">OK</button>
+			</div>
 		</div>
 	</body>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".loadtext>p").click(function() {
+				$(this).addClass("loadin").siblings().removeClass("loadin");
+				var n = $(this).index();
+				console.log(n);
+				$(".loadBox>.idpass").eq(n).addClass("idpasss").siblings().removeClass("idpasss")
+
+			})
+			$(".X").click(function() {
+				$(".loadBox").hide();
+				$(".login").removeClass("loginshow");
+				$(".loginsuc").removeClass("loginshow");
+			})
+			$(".ok").click(function() {
+				$(".loginsuc").removeClass("loginshow");
+				$(".login").removeClass("loginshow");
+				$(".loadBox").hide();
+			})
+			$(".register").click(function() {
+				$(".loadBox").show();
+			})
+			$(".now").click(function() {
+				$(".login").addClass("loginshow");
+			})
+			$(".zcdl").click(function() {
+				$(".loginsuc").addClass("loginshow");
+			})
+
+		})
+	</script>
 </html>

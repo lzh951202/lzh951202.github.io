@@ -114,6 +114,7 @@ img {
 }
 .concept_text1 {
 	color: #ff2c66;
+
 }
 .concept {
 	width: 1180px;
@@ -187,8 +188,6 @@ img {
 
 
 .talk {
-	float: left;
-	min-width: 1200px;
 	width: 100%;
 	height: 266px;
 	background: #292929;
@@ -196,7 +195,7 @@ img {
 
 .talka {
 	float: left;
-	width: 10%;
+	width: 20%;
 	height: 200px;
 	margin: 55px 0 0 0px;
 	padding: 0 0 0 120px;
@@ -276,4 +275,279 @@ img {
 
 .concept {
 	margin: 0 auto;
+}
+.loadBox {
+	display: none;
+	width: 543px;
+	height: 466px;
+	background: white;
+	border: 1px solid black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -233px;
+
+}
+
+.loadtext {
+	width: 543px;
+	height: 79px;
+	border-bottom: 1px solid #cecece;
+}
+
+.loadtext>p {
+	float: left;
+	font-size: 24px;
+	color: #3e3e3e;
+	line-height: 79px;
+	cursor: pointer;
+}
+
+.loadtext>p:nth-child(1) {
+	margin: 0 0 0 65px;
+}
+
+.loadtext>p:nth-child(2) {
+	margin: 0 0 0 178px;
+}
+
+.loadin {
+	border-bottom: 2px solid #ff2c66;
+	cursor: pointer;
+}
+
+.X {
+	float: right;
+	cursor: pointer;
+}
+
+.idpass {
+	display: none;
+	width: 543px;
+	height: 387px;
+}
+
+.pst {
+	float: left;
+	width: 378px;
+	height: 38px;
+	border: 1px solid #d8d8d8;
+	margin: 40px 0 0 82px;
+}
+
+.userp {
+	float: left;
+	width: 26px;
+	height: 26px;
+	margin: 7px 11px 0 9px;
+
+}
+
+.user {
+	float: left;
+	width: 331px;
+	height: 38px;
+	border: 0;
+	border-left: 1px solid #D8D8D8;
+}
+
+.psm {
+	float: left;
+	width: 378px;
+	height: 38px;
+	border: 1px solid #d8d8d8;
+	margin: 14px 0 0 82px;
+}
+
+.passwp {
+
+	float: left;
+	width: 24px;
+	height: 28px;
+	margin: 5px 11px 0 11px;
+}
+
+.psb {
+	float: left;
+	width: 378px;
+	height: 14px;
+	/* border: 1px solid #d8d8d8; */
+	margin: 22px 0 0 82px;
+}
+
+.autosq {
+	float: left;
+	width: 14px;
+	height: 14px;
+}
+
+.auto {
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+	cursor: pointer;
+}
+
+.dlan {
+	float: left;
+	width: 383px;
+	height: 40px;
+	background: linear-gradient(to right, #ff4a7b, #ff6e53);
+	margin: 17px 0 0 80px;
+	border: 0;
+	color: white;
+	cursor: pointer;
+}
+
+.wenti {
+	float: left;
+	width: 380px;
+	height: 89px;
+	margin: 20px 0 0 82px;
+}
+
+.wentit {
+	font-size: 14px;
+	line-height: 14px;
+	text-decoration: none;
+	color: #3e3e3e;
+}
+
+.zf {
+	float: left;
+	width: 383px;
+	margin: 39px 0 0 0;
+}
+
+.now {
+	float: right;
+	width: 88px;
+	height: 31px;
+	border: 1px solid #ff736b;
+	font-size: 14px;
+	color: #ff736b;
+	line-height: 31px;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.idpasss {
+	display: block !important;
+}
+
+.pstt {
+	border: 0;
+}
+
+.pstt>img {
+	margin: 0 0 0 100px;
+}
+
+.sjs {
+	width: 100%;
+	text-align: center;
+}
+
+.sjs>span {
+	color: #d8271c;
+}
+
+.wenti2 {
+	margin: 190px 0 0 82px;
+}
+
+.login {
+	display: none;
+	width: 543px;
+	height: 466px;
+	background: white;
+	border: 1px solid black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -233px;
+}
+
+.h56 {
+	height: 56px;
+}
+
+.logtext {
+	width: 542px;
+	height: 78px;
+	margin: 0 0 0 83px;
+}
+
+.logn {
+	float: left;
+	font-size: 16px;
+	line-height: 38px;
+
+}
+
+.lognn {
+	margin: 0 17px 0 0;
+}
+
+.logtt {
+	float: left;
+	width: 298px;
+	height: 38px;
+	margin: 0 0 0 40px;
+	border: 1px solid #cecece;
+	text-indent: 10px;
+}
+
+.auto2 {
+	margin: 0 0 0 162px;
+}
+
+.zcdl {
+	width: 390px;
+	margin: 21px 0 0 85px;
+}
+
+.loginshow {
+	display: block !important;
+}
+
+.loginsuc {
+	display: none;
+	width: 543px;
+	height: 466px;
+	background: white;
+	border: 1px solid black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -233px;
+}
+
+.suc_circle {
+	margin: 52px 0 0 200px;
+}
+
+.suc1 {
+	margin: 60px 0 0 0;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.suc2 {
+	margin: 60px 0 0 0;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+}
+
+.ok {
+	width: 80px;
+	height: 40px;
+	background: linear-gradient(to right, #ff4a7b, #ff6e53);
+	border: 0;
+	margin: 39px 0 0 232px;
+	color: white;
+	cursor: pointer;
 }
