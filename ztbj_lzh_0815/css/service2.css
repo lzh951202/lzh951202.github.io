@@ -80,17 +80,7 @@ img {
 	color: #FF0000;
 }
 
-.Shuffling {
-	width: 100%;
-}
 
-.Pic_Shuf1 {
-	min-width: 1200px;
-	max-height: 679px;
-	width: 100%;
-	height: auto;
-	vertical-align: top;
-}
 
 .conmid {
 	width: 100%;
@@ -104,13 +94,77 @@ img {
 	height: 800px;
 	margin: 0 auto;
 }
-.midbox>a{
-	display: block;
+.cx{
+	margin: 30px 0 0 50px;
+	font-size: 20px;
+	color: #626262;
+}
+.cx>a{
+	text-decoration: none;
+	color: #000000;
+}
+.cxd{
+	font-size: 35px;
+	margin: 30px 0 0 50px;
+}
+.cx>span{
+	color: #ff5b3d;
+}
+.mb2{
+	width: 1300px;
+	height: 940px;
+}
+.mb2l{
 	float: left;
-	margin: 20px;
+	width: 810px;
+	height: 450px;
+	margin: 0 0 0 50px;
 	
 }
-
+.mb2l>img{
+	vertical-align: top;
+}
+.mb2r{
+	list-style: none;
+	float: left;
+	width: 360px;
+	padding: 0 0 0 68px;
+}
+.mb2r>li{
+	font-size: 12px;
+	height: 120px;
+	margin: 26px 0 0 0;
+}
+.mb2r>li>img{
+	float: left;
+	vertical-align: top;
+	
+}
+.mb2r>li>p{
+	line-height: 20px;
+	margin: 5px 0 0 10px;
+}
+.mb2rw1{
+	float: left;
+	width: 200px;
+	height: 120px;
+	color: #8e8b8b;
+}
+.mb2rw11{
+	color: #ff2c66;
+}
+.mb2rw12{
+	color: #3e3e3e ;
+}
+.dwz{
+	float: left;
+	width: 810px;
+	height: 485px;
+	margin: 20px 0 0 50px;
+	font-size: 12px;
+	color: #747474;
+	line-height: 20px;
+}
 .footer {
 	min-width: 100%;
 	width: 100%;
@@ -133,7 +187,7 @@ img {
 
 .talka {
 	float: left;
-	width: 10%;
+	width: 20%;
 	height: 200px;
 	margin: 55px 0 0 0px;
 	padding: 0 0 0 120px;
