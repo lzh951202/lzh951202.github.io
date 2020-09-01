@@ -101,66 +101,16 @@ img {
 	height: auto;
 }
 
-.box {
-	width: 1180px;
-	height: 1800px;
-	/* background: yellow; */
+.cont{
+	width: 1280px;
+	height: 870px;
 	margin: 0 auto;
 }
-.box1{
-	width: 1180px;
-	height: 495px;
-}
-.box1>img{
+.cont>div{
 	float: left;
-	width: 880px;
-	height: 495px;
-	margin:  0 0 60px 0;
+	margin:  0 0 20px 20px;
 }
-.address{
-	float: left;
-	width: 280px;
-	height: 495px;
-	background: #313131;
-	padding: 0 0 0 20px;
-}
-.t{
-	margin: 20px 0 0 0 ;
-	font-size: 24px;
-	color: #6b6a6a;
-	line-height: 32px;
-	
-}
-.t>span{
-	color: white;
-}
-.m{
-	font-size: 14px;
-	color: #4f4f4f;
-	line-height: 36px;
-	margin: 40px 0 0 0;
-}
-.m>span{
-	color: #fdfcfb;
-}
-.h150{
-	float: left;
-	width: 100%;
-	height: 150px;
-}
-.boxbb{
-	float: left;
-	width: 500px;
-	font-size: 24px;
-}
-.boxbbs{
-	float: left;
-	width: 250px;
-	height: 26px;
-	margin: 0 0 0 250px;
-	line-height: 26px;
-	font-size: 24px;
-}
+
 .footer {
 	min-width: 100%;
 	width: 100%;
