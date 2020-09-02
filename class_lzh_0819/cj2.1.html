@@ -15,10 +15,9 @@
 					<input maxlength=3 style="margin: 0 0 0 20px;" type="text" class="cj" placeholder="请输入成绩" />
 					<button class="btn1" type="button">提交</button>
 					<div class="btnc">
-						<button class="sx">升序</button>
-						<button class="jx">降序</button>
-						<button class="hf">恢复</button>
+						<button class="sx">降序</button>
 						<button class="pass">及格</button>
+						<button class="hf">恢复</button>
 					</div>
 
 				</div>
@@ -43,6 +42,7 @@
 			var xhh = 1;
 			var lin = 0;
 			var a = 1
+			var isPeach = true
 			$(".name").focus(); //聚焦到姓名输入框
 			$(".btn1").click(function() {
 				var nm = $(".name").val();
@@ -96,8 +96,8 @@
 			// 	console.log(cjjj)
 			// 	})
 			//限制输入内容为数字？
-			$(".pass").click(function() {
 
+			$(".pass").click(function() {
 				$(".sheet>li").removeClass("passback")
 				$(".sheet>li").removeClass("npassback")
 				for (var i = 1; i < $(".sheet>li").length; i++) {
@@ -112,6 +112,43 @@
 				$(this).text(a > 0 ? "不及格" : "及格")
 				a = a * -1
 			})
+			$(".hf").click(function() {
+				$(".sheet>li").removeClass("passback")
+				$(".sheet>li").removeClass("npassback")
+				isPeach = false
+				bijiaos(0)
+			})
+			$(".sx").click(function() {
+				bijiaos(2)
+				isPeach = !isPeach
+				$(this).text(isPeach ? "降序" : "升序")
+			})
+
+
+			function bijiaos(k) {
+				for (var i = 1; i < $(".sheet>li").length; i++) {
+					var Icj = $(".sheet>li").eq(i).find("span").eq(k).text()
+					for (var o = 1; o < $(".sheet>li").length; o++) {
+						var Ocj = $(".sheet>li").eq(o).find("span").eq(k).text()
+						console.log(Icj + ":" + Ocj)
+						if (Number(Icj) > Number(Ocj) && isPeach) {
+							change($(".sheet>li").eq(i), $(".sheet>li").eq(o))
+						}
+						if (Number(Icj) < Number(Ocj) && !isPeach) {
+							change($(".sheet>li").eq(i), $(".sheet>li").eq(o))
+						}
+					}
+				}
+			}
+
+
+
+			function change($x, $y) {
+				var $a = $x.clone(true)
+				var $b = $y.clone(true)
+				$y.after($a).remove();
+				$x.after($b).remove();
+			}
 
 			function domcreate() {
 

@@ -108,9 +108,84 @@ img {
 }
 .cont>div{
 	float: left;
-	margin:  0 0 20px 20px;
+	width: 280px;
+	height: 364px;
+	margin:  0 0 20px 30px;
+	position: relative;
+	overflow: hidden;
+}
+.cont>div>img{
+	width: 280px;
+	height: 364px;
+	vertical-align: top;
+}
+.hbox{
+	width: 280px;
+	height: 359px;
+	background:linear-gradient(to right,rgba(255,44,102,0.8),rgba(255,91,61,0.8));
+	padding: 5px 0 0 0;
+	transition: .5s;
+	position: absolute;
+	top: 300px;
+	left: 0;
+	
 }
 
+.hboxt{
+	width: 224px;
+	height: 64px;
+	padding: 0 10% 0 10%;
+	color: white;
+}
+.hboxc{
+	width: 210px;
+	height: 300px;
+	font-size: 14px;
+	color: white;
+	position: absolute;
+	top: 64px;
+	left: 40px;
+}
+.hboxc>span{
+	display: block;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
+.hboxtt{
+	
+	float: left;
+	width: 100%;
+	
+	font-size: 16px;
+}
+.hboxtt>span{
+	float: right;
+	font-size: 14px;
+}
+.hboxtb{
+	float: left;
+	height: 20px;
+	margin: 15px 0 0 0 ;
+	font-size: 12px;
+	line-height: 20px;
+}
+.hboxtb>span{
+	display: inline-block;
+	position: relative;
+	top: -3px;
+}
+.hboxtbr{
+	float: right;
+	margin: 15px 0 0 0 ;
+	font-size: 12px;
+	line-height: 12px;
+}
+.hboxtbr>span{
+	display: inline-block;
+	position: relative;
+	top: -2px;
+}
 .footer {
 	min-width: 100%;
 	width: 100%;
