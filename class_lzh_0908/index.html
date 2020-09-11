@@ -24,7 +24,7 @@
 	<script src="js/jq341.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
-			$(".search").click(function() {
+			$(".search").stop().click(function() {
 				$(".cont").empty()
 				$.ajax({
 					url: "https://api.jisuapi.com/todayhistory/query",

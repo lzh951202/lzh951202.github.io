@@ -12,7 +12,8 @@
 	position: relative;
 
 }
-.backtop{
+
+.backtop {
 	position: fixed;
 	right: 10px;
 	bottom: 10px;
@@ -20,6 +21,7 @@
 	cursor: pointer;
 	z-index: 999;
 }
+
 .main {
 	width: 900px;
 	height: 382px;
@@ -85,8 +87,8 @@
 	padding: 0 50px;
 	background-color: #eee;
 	border-top: 5px solid white;
-	border-left: 50px solid rgba(64,244,154,0.5);
-	border-right: 50px solid rgba(64,244,154,0.5);
+	border-left: 50px solid rgba(64, 244, 154, 0.5);
+	border-right: 50px solid rgba(64, 244, 154, 0.5);
 	border-bottom: 0;
 	color: black;
 	overflow: hidden;
@@ -143,11 +145,13 @@
 	margin: 0 auto;
 	color: #3e3e3e;
 }
+
 .cont>ul>li:nth-child(5)>p {
 	display: block;
 	width: 100%;
 	float: left;
 }
+
 .cont>ul>li:nth-child(5)>p>img {
 	margin: 0 auto;
 }
