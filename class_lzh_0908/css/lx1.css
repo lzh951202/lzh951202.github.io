@@ -145,10 +145,9 @@
 }
 .cont>ul>li:nth-child(5)>p {
 	display: block;
+	width: 100%;
 	float: left;
-	text-align: center;
 }
 .cont>ul>li:nth-child(5)>p>img {
-	
-	margin: 0 0 0 255px;
+	margin: 0 auto;
 }
