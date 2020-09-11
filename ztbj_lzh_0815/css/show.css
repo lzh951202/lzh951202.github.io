@@ -119,6 +119,18 @@ img {
 	height: 364px;
 	vertical-align: top;
 }
+.conm{
+	width: 1080px;
+	height: 660px;
+	background-color: yellow;
+	margin: 0 auto;
+}
+.conb{
+	width: 1180px;
+	height: 440px;
+	background-color: blue;
+	margin: 0 auto;
+}
 .hbox{
 	width: 280px;
 	height: 359px;
