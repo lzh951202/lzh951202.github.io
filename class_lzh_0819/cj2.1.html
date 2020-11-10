@@ -14,11 +14,16 @@
 					<input maxlength=6 type="text" class="name" placeholder="请输入姓名" />
 					<input maxlength=3 style="margin: 0 0 0 20px;" type="text" class="cj" placeholder="请输入成绩" />
 					<button class="btn1" type="button">提交</button>
-			
+					<div class="btnc">
+						<button class="sx">降序</button>
+						<button class="pass">及格</button>
+						<button class="hf">恢复</button>
+					</div>
+
 				</div>
 				<ul class="sheet">
 					<li><span>~</span><span>姓名</span><span>成绩</span></li>
-			
+
 				</ul>
 				<div class="layered">
 					<input maxlength=6 type="text" class="namel" placeholder="请输入姓名" />
@@ -29,14 +34,16 @@
 			</div>
 			<div class="h40"></div>
 		</div>
-		
+
 	</body>
 	<script src="js/cj2.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
 			var xhh = 1;
 			var lin = 0;
-			$(".name").focus();
+			var a = 1
+			var isPeach = true
+			$(".name").focus(); //聚焦到姓名输入框
 			$(".btn1").click(function() {
 				var nm = $(".name").val();
 				var cjj = $(".cj").val();
@@ -73,7 +80,6 @@
 			})
 			$(".cj").keyup(function() {
 				var cjj = $(".cj").val();
-				console.log(cjj)
 				if (cjj == "") {
 					$(".cj").addClass("redborder");
 					return;
@@ -90,6 +96,60 @@
 			// 	console.log(cjjj)
 			// 	})
 			//限制输入内容为数字？
+
+			$(".pass").click(function() {
+				$(".sheet>li").removeClass("passback")
+				$(".sheet>li").removeClass("npassback")
+				for (var i = 1; i < $(".sheet>li").length; i++) {
+					var cj = $(".sheet>li").eq(i).find("span").eq(2).text()
+					if (cj >= 60 && a > 0) {
+						$(".sheet>li").eq(i).addClass("passback")
+					}
+					if (cj < 60 && a < 0) {
+						$(".sheet>li").eq(i).addClass("npassback")
+					}
+				}
+				$(this).text(a > 0 ? "不及格" : "及格")
+				a = a * -1
+			})
+			$(".hf").click(function() {
+				$(".sheet>li").removeClass("passback")
+				$(".sheet>li").removeClass("npassback")
+				isPeach = false
+				bijiaos(0)
+			})
+			$(".sx").click(function() {
+				bijiaos(2)
+				isPeach = !isPeach
+				$(this).text(isPeach ? "降序" : "升序")
+			})
+
+
+			function bijiaos(k) {
+				for (var i = 1; i < $(".sheet>li").length; i++) {
+					var Icj = $(".sheet>li").eq(i).find("span").eq(k).text()
+					for (var o = 1; o < $(".sheet>li").length; o++) {
+						var Ocj = $(".sheet>li").eq(o).find("span").eq(k).text()
+						console.log(Icj + ":" + Ocj)
+						if (Number(Icj) > Number(Ocj) && isPeach) {
+							change($(".sheet>li").eq(i), $(".sheet>li").eq(o))
+						}
+						if (Number(Icj) < Number(Ocj) && !isPeach) {
+							change($(".sheet>li").eq(i), $(".sheet>li").eq(o))
+						}
+					}
+				}
+			}
+
+
+
+			function change($x, $y) {
+				var $a = $x.clone(true)
+				var $b = $y.clone(true)
+				$y.after($a).remove();
+				$x.after($b).remove();
+			}
+
 			function domcreate() {
 
 				var nm = $(".name").val();

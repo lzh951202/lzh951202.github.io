@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "微软雅黑",arial;
+	font-family: "微软雅黑", arial;
 
 }
 
@@ -101,100 +101,64 @@ img {
 	height: auto;
 }
 
-.conmd {
+.box {
 	width: 1200px;
-	height: 1150px;
+	height: 1500px;
+	/* background: yellow; */
 	margin: 0 auto;
 }
 
-.conmdl {
+.boxt>img {
 	float: left;
-	width: 932px;
-	height: 1100px;
+	vertical-align: top;
 }
 
-.conmdlx {
-	width: 950px;
-	height: 337px;
-	margin: 0 0 20px 0;
-}
-
-.conmdlx>img {
+.sq1 {
 	float: left;
-	width: 410px;
-	height: 337px;
+	width: 347px;
+	height: 330px;
+	/* background: salmon; */
+	margin:  0 0 0 53px;
+	font-size: 17px;
+	color: #666666;
+	line-height: 30px;
 }
-
-.cdlxt {
-	float: left;
-	width: 383px;
-	height: 95px;
-	font-size: 14px;
-	color: #8e8b8b;
-	text-align: right;
-}
-
-.cdlxtm {
-	float: left;
-	width: 343px;
-	height: 242px;
-	margin: 0 0 0 47px;
-	font-size: 18px;
-	color: black;
-}
-
-.cdlxtm>span {
-	font-size: 14px;
-	color: #3e3e3e;
-}
-
-.conmdr {
-	float: left;
-	width: 266px;
-	height: 524px;
-	border: 1px solid #ff2c66;
-
-}
-
-.conmdrt {
-	width: 266px;
-	height: 50px;
-	border-bottom: 1px solid #ff2c66;
-	font-size: 18px;
-	color: #3e3e3e;
-	line-height: 50px;
+.sq1>span{
+	display: block;
 	text-align: center;
 }
-
-.conmdrm {
-	width: 266px;
-	height: 406px;
-}
-.cdms{
+.h60{
 	float: left;
-	width: 252px;
-	height: 14px;
-	font-size: 14px;
-	color: #3e3e3e;
-	margin: 19px 0 0 0;
-	padding: 0 0 0 14px;
+	width: 100%;
+	height: 60px;
 }
-.conmdrb {
-	width: 266px;
-	height: 67px;
-	background: linear-gradient(to right,#ff2c66,#ff5b3d);
+.boxs{
+	float: left;
+	width: 380px;
+	height: 580px;
+	/* background: #00FFFF; */
+	margin: 0 20px 0 0 ;
+}
+.boxs>img {
+	vertical-align: top;
+}
+.sqs{
 	font-size: 18px;
-	color: white;
-	line-height: 67px;
+	line-height: 36px;
+	color: #636061;
 	text-align: center;
-	position: relative;
 }
-.conmdrb>img{
-	position: absolute;
-	top: 24px;
-	left: 235px;
-	height: 18px;
+.sqs>span{
+	font-size: 24px;
+	color: #000000;
+	line-height: 48px;
 	
+	
+}
+.h150{
+	float: left;
+	width: 100%;
+	height: 150px;
 }
 .footer {
 	min-width: 100%;

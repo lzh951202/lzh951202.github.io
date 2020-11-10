@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/lx1.css" />
+		<title>历史上的今天</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<img class="backtop" src="img/top.png">
+				<div class="main">
+					<img src="img/TIH.png">
+					<input class="month" type="text" />
+					<input class="day" type="text" />
+					<button class="search" type="button">查看</button>
+					<div class="cont">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="js/jq341.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".search").stop().click(function() {
+				$(".cont").empty()
+				$.ajax({
+					url: "https://api.jisuapi.com/todayhistory/query",
+					async: true,
+					dataType: "jsonp",
+					type: "get",
+					data: {
+						"month": $(".month").val(),
+						"day": $(".day").val(),
+						"appkey": "86d16678af1442e0"
+					},
+					success: function(data) {
+						var ans = data.result
+						for (var i = 0; i < data.result.length; i++) {
+							var x = ans[i]
+							var $ul = $("<ul></ul>");
+							for (var j in x) {
+								var $li = $("<li></li>")
+								$li.html(x[j])
+								$ul.append($li)
+								$ul.click(function() {
+									var h = $(this).height()
+									var hh = $(this).css("height")
+									$(this).css("height", "auto")
+									var hhh = $(this).css("height")
+									$(this).css("height", hh)
+									if (h != 80) {
+										$(this).stop().animate({
+											height: 80
+										})
+									} else {
+										$(this).stop().animate({
+											height: hhh
+										}, 500).siblings().animate({
+											height: 80
+										}, 500)
+									}
+								})
+							}
+							$('.cont').append($ul)
+						}
+					},
+					error: function(xhr, type, errorThrown) {}
+				})
+			})
+
+			$(".backtop").click(function() {
+				$("body,html").animate({
+					scrollTop: 0
+				}, 500)
+			})
+			$(".cont").slideDown()
+		})
+	</script>
+</html>

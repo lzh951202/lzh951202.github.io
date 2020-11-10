@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑", arial;
+	outline: none;
+	vertical-align: top;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	position: relative;
+
+}
+
+.backtop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.main {
+	width: 900px;
+	height: 382px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.month {
+	position: absolute;
+	top: 150px;
+	left: 198px;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+	font-size: 54px;
+	font-style: italic;
+	text-align: center;
+}
+
+.day {
+	position: absolute;
+	top: 150px;
+	left: 350px;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+	font-size: 54px;
+	font-style: italic;
+	text-align: center;
+}
+
+.search {
+	position: absolute;
+	top: 155px;
+	left: 550px;
+	width: 120px;
+	height: 80px;
+	background: transparent;
+	border: 10px solid #ffd166;
+	border-radius: 50px;
+	font-size: 28px;
+	text-align: center;
+}
+
+.search:active {
+	background-color: #ffd166;
+}
+
+.cont {
+	display: none;
+	width: 100%;
+	height: 0;
+}
+
+.cont>ul {
+	list-style: none;
+	height: 80px;
+	width: 700px;
+	padding: 0 50px;
+	background-color: #eee;
+	border-top: 5px solid white;
+	border-left: 50px solid rgba(64, 244, 154, 0.5);
+	border-right: 50px solid rgba(64, 244, 154, 0.5);
+	border-bottom: 0;
+	color: black;
+	overflow: hidden;
+}
+
+
+.cont>ul>li:nth-child(1) {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+}
+
+.cont>ul>li:nth-child(2) {
+	float: left;
+	font-size: 12px;
+	width: 60%;
+	margin: 0 0 20px 0;
+	text-align: right;
+}
+
+.cont>ul>li:nth-child(3)::before {
+	content: "年";
+	float: left;
+	font-size: 12px;
+
+}
+
+.cont>ul>li:nth-child(3) {
+	float: left;
+	font-size: 12px;
+	margin: 0 0 20px 0;
+}
+
+.cont>ul>li:nth-child(4)::before {
+	content: "月";
+	font-size: 12px;
+}
+
+.cont>ul>li:nth-child(4) {
+	float: left;
+	font-size: 12px;
+	margin: 0 200px 50px 0px;
+
+}
+
+.cont>ul>li:nth-child(4)::after {
+	content: "日";
+	font-size: 12px;
+
+}
+
+.cont>ul>li:nth-child(5) {
+	font-size: 16px;
+	margin: 0 auto;
+	color: #3e3e3e;
+}
+
+.cont>ul>li:nth-child(5)>p {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.cont>ul>li:nth-child(5)>p>img {
+	margin: 0 auto;
+}

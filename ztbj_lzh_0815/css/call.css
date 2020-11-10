@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "微软雅黑",arial;
+	font-family: "微软雅黑", arial;
 
 }
 
@@ -101,100 +101,65 @@ img {
 	height: auto;
 }
 
-.conmd {
-	width: 1200px;
-	height: 1150px;
+.box {
+	width: 1180px;
+	height: 1800px;
+	/* background: yellow; */
 	margin: 0 auto;
 }
-
-.conmdl {
+.box1{
+	width: 1180px;
+	height: 495px;
+}
+.box1>img{
 	float: left;
-	width: 932px;
-	height: 1100px;
+	width: 880px;
+	height: 495px;
+	margin:  0 0 60px 0;
 }
-
-.conmdlx {
-	width: 950px;
-	height: 337px;
-	margin: 0 0 20px 0;
-}
-
-.conmdlx>img {
+.address{
 	float: left;
-	width: 410px;
-	height: 337px;
+	width: 280px;
+	height: 495px;
+	background: #313131;
+	padding: 0 0 0 20px;
 }
-
-.cdlxt {
-	float: left;
-	width: 383px;
-	height: 95px;
-	font-size: 14px;
-	color: #8e8b8b;
-	text-align: right;
-}
-
-.cdlxtm {
-	float: left;
-	width: 343px;
-	height: 242px;
-	margin: 0 0 0 47px;
-	font-size: 18px;
-	color: black;
-}
-
-.cdlxtm>span {
-	font-size: 14px;
-	color: #3e3e3e;
-}
-
-.conmdr {
-	float: left;
-	width: 266px;
-	height: 524px;
-	border: 1px solid #ff2c66;
-
-}
-
-.conmdrt {
-	width: 266px;
-	height: 50px;
-	border-bottom: 1px solid #ff2c66;
-	font-size: 18px;
-	color: #3e3e3e;
-	line-height: 50px;
-	text-align: center;
-}
-
-.conmdrm {
-	width: 266px;
-	height: 406px;
-}
-.cdms{
-	float: left;
-	width: 252px;
-	height: 14px;
-	font-size: 14px;
-	color: #3e3e3e;
-	margin: 19px 0 0 0;
-	padding: 0 0 0 14px;
-}
-.conmdrb {
-	width: 266px;
-	height: 67px;
-	background: linear-gradient(to right,#ff2c66,#ff5b3d);
-	font-size: 18px;
-	color: white;
-	line-height: 67px;
-	text-align: center;
-	position: relative;
-}
-.conmdrb>img{
-	position: absolute;
-	top: 24px;
-	left: 235px;
-	height: 18px;
+.t{
+	margin: 20px 0 0 0 ;
+	font-size: 24px;
+	color: #6b6a6a;
+	line-height: 32px;
 	
+}
+.t>span{
+	color: white;
+}
+.m{
+	font-size: 14px;
+	color: #4f4f4f;
+	line-height: 36px;
+	margin: 40px 0 0 0;
+}
+.m>span{
+	color: #fdfcfb;
+}
+.h150{
+	float: left;
+	width: 100%;
+	height: 150px;
+}
+.boxbb{
+	float: left;
+	width: 500px;
+	font-size: 24px;
+}
+.boxbbs{
+	float: left;
+	width: 250px;
+	height: 26px;
+	margin: 0 0 0 250px;
+	line-height: 26px;
+	font-size: 24px;
 }
 .footer {
 	min-width: 100%;

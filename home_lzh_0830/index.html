@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/lx1.css" />
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li style="width: 1066px;" class="lii">
+				<div class="jiantou jiantouz"></div><p class="title">陈月</p><p class="con">身世神秘，颇有来历，自幼跟随父亲陈商长于中原稻香村，后来拜入万花谷花圣门下，为人温柔善良，坚守医者仁心，真实身份其实是太平公主的曾孙女。</p><img src="img/p1.jpg" alt=""></li>
+			<li class="lii"><div class="jiantou"></div><p class="title">万花</p><p class="con">大唐开元二十三年，万花谷主东方宇轩游历四方，恍惚间误入秦岭青岩，叹西部山间竟有如此仙处，于是招纳贤士在此居隐，并命之为"万花谷"。
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万花谷可以说东方宇轩一人建立的门派，他凭借自己强大的人格魅力，笼络天下奇人异士，一时间，万花谷成为大唐时期思想最超前、气氛最自由的地方。海纳百川，有容乃大，万花谷以其兼容并包的宽容态度，成为各种思想各种特长人才的圣地。</p><img src="img/p2.jpg" alt=""></li>
+			<li class="lii"><div class="jiantou"></div><p class="title">唐门</p><p class="con">唐门最初是杀手世家，但只在川蜀一带出没。他们善用暗器，神出鬼没，让当地人惊恐不已。贞观之治，国家太平，百姓安居乐业，当刺客已经不能满足唐家的日常需要。唐家为了继续生存便开始涉足商业，并从此不断壮大。唐门的名气也开始越传越大。</p><img src="img/p3.jpg" alt=""></li>
+			<li class="lii"><div class="jiantou"></div><p class="title">长歌</p><p class="con">终唐一朝，民风尚武，文人也爱吟咏剑仙侠客、向往仗剑游侠之举，因而书生也多为习武之人。当时多有文武双全之士聚于相知山庄，平日里以诗词歌赋、吟诗作对等风雅之事为乐，却也在闲时比武切磋，希望有朝一日能够「学成文武术，货与帝王家」。渐渐的，众人竟合力创出了一套套路数独特的武功，便自成一派，对外自称长歌门。自此长歌门一名逐渐在江湖上流传开来，不少名士官绅、隐士高人仰慕其名，纷纷造访长歌门，长歌门随即成为大唐风雅之地。七秀坊、万花谷相继成立后，长歌门更是与这两者并称为大唐三大风雅之地。</p><img src="img/p4.jpg" alt=""></li>
+			<li class="lii"><div class="jiantou"></div><p class="title">苍云</p><p class="con">薛仁贵后人薛直带领的唐军精锐“玄甲破阵营”本为雁门关守军，被安禄山视为叛唐的绊脚石。天宝四年，安军挑起边境争端，趁破阵营剿灭契丹叛军之际从后方夹击，薛直战死，破阵营幸存者无法洗刷冤屈。原破阵营在副将“血手凤凰”燕忘情组织为“玄甲苍云”，誓要向安禄山复仇。朝中大员唯郭子仪同情故交薛直遭遇，暗中对其余部提供支持</p><img src="img/p5.jpg" alt=""></li>
+		</ul>
+
+	</body>
+	<script src="js/new_file.js"></script>
+	<script>
+		
+		
+		$("li").click(function() {
+			var a = $(this).width()
+			console.log(a)
+					if (a == 1066) {
+						$(this).stop().animate({
+							width: 50
+						
+						})
+						$(this).find(".jiantouz").removeClass("jiantouz")
+						}
+						else {
+							$(this).animate({
+								width: 1066
+							}).siblings("li").stop().animate({
+								width: 50
+							})
+							$(this).parent().find("li").find(".jiantouz").removeClass("jiantouz")
+							$(this).find(".jiantou").addClass("jiantouz")
+						}
+					})
+	</script>
+</html>
