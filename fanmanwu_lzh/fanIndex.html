@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/fanIndex.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	</head>
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+	
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+	
+		.swiper-container {
+			float: left;
+			display: inline-block;
+			width: 680px;
+			height: 343px;
+			border-radius: 10px;
+		}
+	
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+	
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+		.swiper-slide>img{
+			width: 100%;
+			height: 343px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<!-- 头部选项卡开始 -->
+			<div class="header">
+				<div class="headBox">
+					<div class="headerLogoBox">
+						<img class="headerLogo" src="img/index/logo.png">
+					</div>
+					<ul class="headerLinkUl">
+						<li class="headerLinkItem">
+							<p>首页</p>
+							<a href="index.html">
+								<div><img src="img/index/indexHead.png"></div>
+							</a>
+						</li>
+						<li class="headerLinkItem linkItem">
+							<p>番剧</p>
+							<a href="fanIndex.html">
+								<div><img src="img/index/tv.png"></div>
+							</a>
+							<div></div>
+							<ul class="newFanLine ">
+								<a href="">
+									<li>最新更新</li>
+								</a>
+								<a href="">
+									<li>连载动画</li>
+								</a>
+								<a href="">
+									<li>完结动画</li>
+								</a>
+								<a href="">
+									<li>新番时间表</li>
+								</a>
+							</ul>
+						</li>
+						<li class="headerLinkItem linkItem">
+							<p>漫画</p>
+							<a>
+								<div><img src="img/index/bookhead.png"></div>
+							</a>
+							<div></div>
+							<ul class="newFanLine serialLine">
+								<li></li>
+								<a href="">
+									<li>热门</li>
+								</a>
+								<a href="">
+									<li>类型</li>
+								</a>
+								<a href="">
+									<li>排行</li>
+								</a>
+							</ul>
+						</li>
+						<li class="headerLinkItem">
+							<p>音乐</p>
+							<a>
+								<div><img src="img/index/musicHead.png"></div>
+							</a>
+						</li>
+						<li class="headerLinkItem linkItem">
+							<p>漫评</p>
+							<a>
+								<div><img src="img/index/evaluationHead.png"></div>
+							</a>
+							<div></div>
+							<ul class="newFanLine evaluationLine">
+								<li></li>
+								<a href="">
+									<li>番剧</li>
+								</a>
+								<a href="">
+									<li>漫画</li>
+								</a>
+								<a href="">
+									<li>专题</li>
+								</a>
+							</ul>
+						</li>
+						<li class="headerLinkItem">
+							<p>商城</p>
+							<a>
+								<div><img src="img/index/shopHead.png"></div>
+							</a>
+						</li>
+						<li class="headerLinkItem">
+							<p>论坛</p>
+							<a href="forumIndex.html">
+								<div><img src="img/index/luntanHead.png"></div>
+							</a>
+						</li>
+						<li class="headerLinkItem">
+							<p>排行</p>
+							<a>
+								<div><img src="img/index/paihangHead.png"></div>
+							</a>
+						</li>
+					</ul>
+					<div class="headBoxRight">
+						<a href="login.html" class="loginAndRegister">登录/注册</a>
+						<div class="search">
+							<div class="searchBtn"><img style="margin: 0 0 0 4px;" src="img/index/search.png"></div>
+							<input class="searchContent" type="text" placeholder="作者、歌手、新番、" />
+						</div>
+					</div>
+				</div>
+				<div class="menuLine">
+				</div>
+				<div class="menuLine1"></div>
+			</div>
+			<!-- 头部选项卡结束 -->
+			<!-- 主体内容开始 -->
+			<div class="content">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/index/picture-2.jpg"></div>
+						<div class="swiper-slide"><img src="img/index/picture-2.jpg"></div>
+						<div class="swiper-slide"><img src="img/index/picture-2.jpg"></div>
+						<div class="swiper-slide"><img src="img/index/picture-2.jpg"></div>
+						<div class="swiper-slide"><img src="img/index/picture-2.jpg"></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+
+				<div class="contentRight">
+					<div class="conRightSq"><img src="img/fanIndex/mfsdxn.png"></div>
+					<div class="conRightSq"><img src="img/fanIndex/mfsdxn.png"></div>
+					<div class="conRightSq"><img src="img/fanIndex/mfsdxn.png"></div>
+					<div class="conRightSq"><img src="img/fanIndex/mfsdxn.png"></div>
+				</div>
+				<div class="nearUpdate">
+
+					<div class="nearTop">
+						<img class="fire" src="img/fanIndex/fire.png">
+						<p class="update">最近更新</p>
+						<p class="newFanListBtn">新番时间表</p>
+					</div>
+					<ul class="nearFanList">
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+						<li>
+							<img src="img/fanIndex/near1.png">
+							<p>火影忍者 博人传</p>
+							<p>作者:岸本齐史</p>
+							<p>更新至 <span>12</span> 集</p>
+						</li>
+					</ul>
+				</div>
+				<div class="lzdhMain">
+					<div class="lzLeft">
+						<div class="lzLeftTop">
+							<img class="lzdh" src="img/fanIndex/lzdh.png">
+							<p class="update">连载动画</p>
+						</div>
+						<div class="lzLeftBtm">
+							<ul class="lzdhList">
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+
+							</ul>
+						
+						</div>
+						
+					</div>
+					<div class="info">
+						<p>热门搜索</p>
+						<div>
+							<p>海贼王</p>
+							<p>火影忍者</p>
+							<p>银魂</p>
+							<p>死神</p>
+							<p>黑色四叶草</p>
+							<p>舞动青春</p>
+							<p>调教咖啡厅</p>
+							<p>干物妹!小埋R</p>
+							<p>中二病也要谈恋爱</p>
+							<p>龙珠超</p>
+						</div>
+					</div>
+				</div>
+<div class="lzdhMain">
+					<div class="lzLeft">
+						<div class="lzLeftTop">
+							<img class="overDh" src="img/fanIndex/wjdh.png">
+							<p class="update">完结动画</p>
+						</div>
+						<div class="lzLeftBtm">
+							<ul class="lzdhList">
+								<li>
+									<img src="img/fanIndex/wjdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">魔法少女伊利亚-雪下的誓言</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+								<li>
+									<img src="img/fanIndex/lzdh1.png">
+									<div class="lzdhListLeft">
+										<p class="lzTitle">少女终末旅行 08</p>
+										<p class="playNum"><img class="sxj" src="img/fanIndex/sxj.png">&nbsp;总播放数:<span>120W</span></p>
+									</div>
+									<div class="lzdhListRight">
+										<p>8.0</p>
+										<img class="star" src="img/index/stars.png">
+										<div class="starBack"></div>
+									</div>
+								</li>
+
+							</ul>
+						
+						</div>
+						
+					</div>
+					<div class="info2">
+						<p>热门评论</p>
+						<ul>
+							<li><img src="img/fanIndex/peopleIcon.png" >
+							<p>饭丝:</p><p>好虐心啊，头，手，脚，全换了月人哎。</p>
+							<p>来自:</p><p>《<span>宝石之国</span>》</p><p>一天前</p>
+							</li>
+							<li><img src="img/fanIndex/peopleIcon.png" >
+							<p>饭丝:</p><p>好虐心啊，头，手，脚，全换了月人哎。</p>
+							<p>来自:</p><p>《<span>宝石之国</span>》</p><p>一天前</p>
+							</li>
+							<li><img src="img/fanIndex/peopleIcon.png" >
+							<p>饭丝:</p><p>好虐心啊，头，手，脚，全换了月人哎。</p>
+							<p>来自:</p><p>《<span>宝石之国</span>》</p><p>一天前</p>
+							</li>
+							<li><img src="img/fanIndex/peopleIcon.png" >
+							<p>饭丝:</p><p>好虐心啊，头，手，脚，全换了月人哎。</p>
+							<p>来自:</p><p>《<span>宝石之国</span>》</p><p>一天前</p>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- 主体内容结束 -->
+			
+			<!-- 尾部开始 -->
+			<div class="footer">
+				<div class="footerContent">
+					<div class="footerLeft">
+						<img class="footerLogo" src="img/index/logo.png">
+						<p>首页 | 饭漫屋APP(未来) | 关于饭漫屋 | 加入我们 | 我要投稿 | 帮助FAQ | 家长监护 | 用户协议</p>
+						<p>饭漫屋(天津)科技有限公司</p>
+						<p>copyright 2016 fanmanwu.com All Rights Reserved</p>
+						<p>全部信息 饭漫屋 版权所有 未经许可 严禁转载 | 京ICP备15052388号-2 | 网络文化经营许可证 京网文[2017]2280-262号</p>
+					</div>
+					<div class="footerRight"></div>
+				</div>
+			</div>
+			<!-- 尾部结束 -->
+		</div>
+	</body>
+
+	<script src="js/341.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		// 头部菜单栏JS开始
+		var timerHead1
+		var timerHead2
+		$(".headerLinkItem").hover(function() {
+			$(this).find("p").addClass("headChangeHide")
+			$(this).find("a").find("div").addClass("headChangeShow")
+			$(this).find("div").addClass("headChangeShow")
+			$(this).siblings().find("p").removeClass("headChangeHide")
+			$(this).siblings().find("div").removeClass("headChangeShow")
+			$(this).siblings().find("a").find("div").removeClass("headChangeShow")
+			$(".menuLine").removeClass("headChangeShow")
+			$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+			clearTimeout(timerHead1)
+			clearTimeout(timerHead2)
+		}, function() {
+			timerHead1 = setTimeout(function() {
+				$(".headerLinkItem").find("a").find("div").removeClass("headChangeShow")
+				$(".headerLinkItem").find("div").removeClass("headChangeShow")
+				$(".headerLinkItem").find("p").removeClass("headChangeHide")
+			}, 300)
+		})
+		$(".linkItem").hover(function() {
+			$(".menuLine1").hide()
+			$(".menuLine").addClass("headChangeShow")
+			clearTimeout(timerHead1)
+			clearTimeout(timerHead2)
+			$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+			$(this).find("ul").addClass("headChangeShow")
+
+		}, function() {
+			timerHead2 = setTimeout(function() {
+				$(".menuLine").removeClass("headChangeShow")
+				$(".headerLinkItem").find("a").find("div").removeClass("headChangeShow")
+				$(".headerLinkItem").find("p").removeClass("headChangeHide")
+				$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+			}, 300)
+
+		})
+		// 头部菜单栏JS结束
+		
+		//主体JS开始
+		$(".nearFanList").find("li").click(function(){
+			window.location.href="fanDetails.html"
+		})
+	</script>
+
+	<!-- 轮播图开始 -->
+	<script src="js/swiper-bundle.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+	<!-- 轮播图结束 -->
+</html>

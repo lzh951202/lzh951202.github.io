@@ -1,0 +1,632 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+/* 头部开始 */
+.menuLine {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background-color: #0350bd;
+	z-index: 999;
+
+}
+
+.menuLine1 {
+	width: 100%;
+	height: 30px;
+	background-color: transparent;
+}
+
+.headChangeShow {
+	display: block !important;
+}
+
+.headChangeHide {
+	display: none;
+}
+
+.header {
+	width: 100%;
+	height: 90px;
+	border-top: 3px solid #f6f6f6;
+	background-color: #ffffff;
+	/* opacity: 0-1之间;不透明度; */
+	/* transition-delay: 时间; 过*/
+}
+
+.headBox {
+	width: 80%;
+	min-width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.headerLogo {
+	float: left;
+	margin: 14px 0 0 11px;
+}
+
+.headerLinkUl {
+	list-style: none;
+	float: left;
+	margin: 14px 0 0 40px;
+}
+
+.headerLinkItem {
+	float: left;
+	width: 40px;
+	margin: 0 40px 0 0;
+	text-align: center;
+	position: relative;
+}
+
+.headerLinkUl>li {
+	color: #999999;
+
+}
+
+.headerLinkUl>li>a>div {
+	display: none;
+	width: 40px;
+	height: 40px;
+	background-color: #0350bd;
+	border-radius: 50%;
+	margin: -10px 0 0 0;
+	cursor: pointer;
+}
+
+.headerLinkUl>li>a>div>img {
+
+	height: 25px;
+	margin: 8px 0 0 0;
+
+}
+
+.headerLinkUl>li:nth-child(2)>a>div>img {
+
+	height: 25px;
+	margin: 7px 0 0 0;
+
+}
+
+.headerLinkUl>li:nth-child(5)>a>div>img {
+
+	height: 25px;
+	margin: 5px 0 0 4px;
+
+}
+
+.headerLinkUl>li:nth-child(6)>a>div>img {
+
+	height: 25px;
+	margin: 6px 0 0 1px;
+
+}
+
+.headerLinkUl>li:nth-child(8)>a>div>img {
+
+	height: 25px;
+	margin: 6px 0 0 0;
+
+}
+
+.headerLinkItem>div{
+	display: none;
+	width: 20px;
+	height: 20px;
+	background-color: #0350bd;
+	transform: rotateZ(45deg);
+	position: absolute;
+	left: 10px;
+	top: 36px;
+}
+
+
+
+.headerLinkItem>ul {
+	display: none;
+}
+
+.headerLinkItem>ul>li {
+	cursor: pointer;
+}
+
+.newFanLine {
+	width: 800px;
+	list-style: none;
+	position: absolute;
+	left: -160px;
+	top: 40px;
+	z-index: 9999;
+}
+
+.newFanLine>a>li {
+	float: left;
+	height: 23px;
+	margin: 0 0 0 20px;
+	color: white;
+
+}
+
+.newFanLine>a>li:hover {
+	border-bottom: 2px solid white;
+}
+
+.serialLine>li {
+	float: left;
+	width: 90px;
+	height: 1px;
+}
+
+.evaluationLine>li {
+	float: left;
+	width: 90px;
+	height: 1px;
+
+}
+
+.headBoxRight {
+	float: right;
+	margin: 22px 0 0 0;
+}
+
+.loginAndRegister {
+	float: right;
+	margin: 0 0 0 20px;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.search {
+	float: right;
+	width: 150px;
+	height: 20px;
+	background-color: #e6e6e6;
+	border: 0;
+	border-radius: 3px;
+}
+
+.searchBtn {
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-color: #0350bd;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.searchContent {
+	float: right;
+	width: 130px;
+	height: 20px;
+	background-color: transparent;
+	border: 0;
+	border-radius: 3px;
+	text-indent: 10px;
+}
+
+/* 头部结束 */
+
+
+
+/* ----主要内容开始 ----*/
+.content {
+	width: 100%;
+	height: auto;
+	background-color: #f8f8f8;
+}
+
+/* 新番开始 */
+.newFan {
+	width: 1180px;
+	height: 370px;
+	margin: 0 auto;
+}
+
+.newFanTop {
+	width: 1180px;
+	height: 64px;
+}
+
+.newFanTv {
+	float: left;
+	margin: 10px 25px 0 5px;
+}
+
+.newFanTitle {
+	float: left;
+	height: 18px;
+	margin: 25px 0 0 0;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.getMoreFan {
+	float: right;
+	margin: 44px 8px 0 0px;
+	font-size: 12px;
+	color: #dfcd62;
+}
+
+.sTitleNewFanList {
+	list-style: none;
+	height: 43px;
+	margin: 20px 0 20px 0;
+	
+}
+
+.sTitleNewFanList>li {
+	float: left;
+	font-size: 24px;
+	color: #999999;
+	margin: 0 52px 0 0;
+	cursor: pointer;
+}
+.sTitleNewFanList>li:hover{
+	color: #046dff;
+}
+.sTitleNewFanList>li:nth-child(1) {
+	margin: 0 40px 0 70px;
+}
+
+.newFanList {
+	list-style: none;
+	width: 1180px;
+	height: 180px;
+}
+
+.newFanList>li {
+	float: left;
+	width: 280px;
+	height: 78px;
+	background-color: white;
+	margin: 0 20px 24px 0;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.newFanList>li:hover{
+	box-shadow: 5px 5px 10px #c3c3c3;
+}
+.newFanList>li:nth-child(4) {
+	float: left;
+	width: 280px;
+	height: 78px;
+	background-color: white;
+	margin: 0 0 24px 0;
+	border-radius: 6px;
+}
+
+.newFanList>li:nth-child(8) {
+	float: left;
+	width: 280px;
+	height: 78px;
+	background-color: white;
+	margin: 0 0 24px 0;
+	border-radius: 6px;
+}
+
+.newFanList>li>img {
+	float: left;
+}
+
+.newFanList>li>p {
+	float: left;
+	margin: 16px 0 0 10px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.newFanList>li>p>span {
+	font-size: 16px;
+	line-height: 16px;
+	color: #0350bd;
+}
+
+.checked {
+	color: #0350bd!important;
+}
+
+/* 新番结束 */
+
+/* 连载漫画开始 */
+.serialFan {
+	width: 1180px;
+	height: 475px;
+	margin: 0 auto;
+}
+
+.sTitleSerialFanList {
+	list-style: none;
+	height: 43px;
+	margin: 20px 0 20px 0;
+}
+
+.sTitleSerialFanList>li {
+	float: left;
+	margin: 0 52px 0 0;
+	cursor: pointer;
+	font-size: 24px;
+	color: #999999;
+}
+.sTitleSerialFanList>li:hover{
+	color: #046dff;
+}
+.sTitleSerialFanList>li:nth-child(1) {
+	margin: 0 40px 0 70px;
+}
+
+.serialFanMainList {
+	width: 100%;
+	list-style: none;
+}
+
+.serialFanMainList>li {
+	float: left;
+	width: 250px;
+	height: 323px;
+	margin: 0 60px 0 0;
+	cursor: pointer;
+}
+
+.serialFanMainList>li:nth-child(4) {
+	float: left;
+	width: 250px;
+	height: 323px;
+	margin: 0 0 0 0;
+}
+
+.serialFanMainList>li>p:nth-child(2) {
+	float: left;
+	margin: 10px 0 0 4px;
+	font-size: 20px;
+	color: #666666;
+}
+
+.serialFanMainList>li>p:nth-child(3) {
+	float: right;
+	margin: 14px 2px 0 0;
+	font-size: 14px;
+	color: #999999;
+}
+
+/* 连载漫画结束 */
+
+/* 饭漫音乐开始 */
+.musicFan {
+
+	width: 1180px;
+	height: 370px;
+	margin: 0 auto;
+
+}
+
+.sTitleMusicFanList {
+	list-style: none;
+	height: 43px;
+	margin: 20px 0 20px 0;
+}
+
+.sTitleMusicFanList>li {
+	float: left;
+	margin: 0 52px 0 0;
+	cursor: pointer;
+	font-size: 24px;
+	color: #999999;
+}
+.sTitleMusicFanList>li:hover{
+	color: #046dff;
+}
+
+.sTitleMusicFanList>li:nth-child(1) {
+	margin: 0 40px 0 70px;
+}
+
+.musicFanList {
+	list-style: none;
+	width: 1180px;
+	height: 180px;
+}
+
+.musicFanList>li {
+	float: left;
+	width: 280px;
+	height: 223px;
+	margin: 0 20px 0 0;
+	cursor: pointer;
+}
+
+.musicFanList>li:nth-child(4) {
+	float: left;
+	width: 280px;
+	height: 223px;
+	margin: 0 0 0 0;
+}
+
+.musicFanList>li>p:nth-child(2) {
+	float: left;
+	margin: 14px 0 0 5px;
+	font-size: 18px;
+}
+
+.musicFanList>li>p:nth-child(3) {
+	float: right;
+	margin: 20px 10px 0 0;
+	font-size: 12px;
+}
+
+/* 饭漫音乐结束 */
+/* 漫评开始 */
+.evaluationFan {
+
+	width: 1180px;
+	height: 560px;
+	margin: 0 auto;
+
+}
+
+.sTitleEvaluationFanList {
+	list-style: none;
+	height: 43px;
+	margin: 20px 0 20px 0;
+}
+
+.sTitleEvaluationFanList>li {
+	float: left;
+	margin: 0 52px 0 0;
+	cursor: pointer;
+	font-size: 24px;
+	color: #999999;
+}
+.sTitleEvaluationFanList>li:hover{
+	color: #046dff;
+}
+.sTitleEvaluationFanList>li:nth-child(1) {
+	margin: 0 40px 0 70px;
+}
+
+.evaluationFanList {
+	list-style: none;
+	position: relative;
+	width: 1180px;
+	height: 410px;
+}
+
+.evaluationFanList>li {
+	float: left;
+	width: 580px;
+	height: 350px;
+	cursor: pointer;
+
+}
+
+.evaContent {
+	float: left;
+	position: relative;
+	width: 309px;
+	height: 280px;
+	background-color: white;
+	margin: 46px 0 0 0;
+	padding: 26px 0 0 235px;
+	border-radius: 5px;
+	
+}
+.evaContent:hover{
+	box-shadow: 5px 10px 10px #c3c3c3;
+}
+
+.evaContent>img:nth-child(1) {
+	position: absolute;
+	top: -40px;
+	left: 20px;
+}
+
+.evaContent>p:nth-child(3) {
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.evaContent>p:nth-child(3)>span {
+	color: #007AFF;
+}
+
+.evaContent>div:nth-child(4) {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	margin-top: 5px;
+	position: relative;
+}
+
+.evaContent>div:nth-child(4)>div {
+	background: #f39800;
+	height: 12px;
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+.evaContent>div:nth-child(4)>img {
+	width: 60px;
+	z-index: 999;
+	position: relative;
+}
+
+.evaContent>p:nth-child(5) {
+	float: right;
+	margin: 7px 165px 0 0;
+	font-size: 14px;
+}
+
+
+.evaContent>img:nth-child(6) {
+	margin: 10px 0 0 0;
+}
+
+.evaContent>p:nth-child(7) {
+	display: inline-block;
+	margin: 0 0 24px 10px;
+	position: relative;
+	top: -8px;
+	font-size: 12px;
+	color: #0000FF;
+}
+
+.evaContent>p:nth-child(8) {
+	display: inline-block;
+	margin: 0 0 0 40px;
+	position: relative;
+	top: -8px;
+	font-size: 12px;
+	color: #a7a5ab;
+}
+
+.evaContent>p:nth-child(9) {
+
+	font-size: 14px;
+	color: blue;
+}
+
+.evaContent>p:nth-child(10) {
+	margin: 5px 0 0 0;
+	width: 295px;
+	font-size: 14px;
+	color: #a7a5ab;
+}
+
+/* 漫评结束 */
+/* 主要内容结束 */
+
+
+
+
+
+
+
+/* 尾部开始 */
+.footer {
+	width: 100%;
+	height: 172px;
+	background-color: #18161f;
+}
+
+.footerContent {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.footerLogo {
+	margin: 20px 0 20px 0;
+}
+
+.footerLeft>p {
+	font-size: 16px;
+	color: #817e89;
+}
+
+/* 尾部结束 */

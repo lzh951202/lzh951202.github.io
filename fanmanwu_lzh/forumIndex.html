@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/forumIndex.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/forumIndexIcon/iconfont.css" />
+		<title></title>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+		
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+		
+			.swiper-container {
+				display: inline-block;
+				width:959px;
+				height: 351px;
+		
+			}
+		
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+		
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 头部选项卡开始 -->
+		<div class="header">
+			<div class="headBox">
+				<div class="headerLogoBox">
+					<img class="headerLogo" src="img/index/logo.png">
+				</div>
+				<ul class="headerLinkUl">
+					<li class="headerLinkItem">
+						<p>首页</p>
+						<a href="index.html">
+							<div><img src="img/index/indexHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem linkItem">
+						<p>番剧</p>
+						<a href="fanIndex.html">
+							<div><img src="img/index/tv.png"></div>
+						</a>
+						<div></div>
+						<ul class="newFanLine ">
+							<a href="">
+								<li>最新更新</li>
+							</a>
+							<a href="">
+								<li>连载动画</li>
+							</a>
+							<a href="">
+								<li>完结动画</li>
+							</a>
+							<a href="">
+								<li>新番时间表</li>
+							</a>
+						</ul>
+					</li>
+					<li class="headerLinkItem linkItem">
+						<p>漫画</p>
+						<a>
+							<div><img src="img/index/bookhead.png"></div>
+						</a>
+						<div></div>
+						<ul class="newFanLine serialLine">
+							<li></li>
+							<a href="">
+								<li>热门</li>
+							</a>
+							<a href="">
+								<li>类型</li>
+							</a>
+							<a href="">
+								<li>排行</li>
+							</a>
+						</ul>
+					</li>
+					<li class="headerLinkItem">
+						<p>音乐</p>
+						<a>
+							<div><img src="img/index/musicHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem linkItem">
+						<p>漫评</p>
+						<a>
+							<div><img src="img/index/evaluationHead.png"></div>
+						</a>
+						<div></div>
+						<ul class="newFanLine evaluationLine">
+							<li></li>
+							<a href="">
+								<li>番剧</li>
+							</a>
+							<a href="">
+								<li>漫画</li>
+							</a>
+							<a href="">
+								<li>专题</li>
+							</a>
+						</ul>
+					</li>
+					<li class="headerLinkItem">
+						<p>商城</p>
+						<a>
+							<div><img src="img/index/shopHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem">
+						<p>论坛</p>
+						<a href="forumIndex.html">
+							<div><img src="img/index/luntanHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem">
+						<p>排行</p>
+						<a>
+							<div><img src="img/index/paihangHead.png"></div>
+						</a>
+					</li>
+				</ul>
+				<div class="headBoxRight">
+					<a href="login.html" class="loginAndRegister">登录/注册</a>
+					<div class="search">
+						<div class="searchBtn"><img style="margin: 0 0 0 4px;" src="img/index/search.png"></div>
+						<input class="searchContent" type="text" placeholder="作者、歌手、新番、" />
+					</div>
+				</div>
+			</div>
+			<div class="menuLine">
+			</div>
+			<div class="menuLine1"></div>
+		</div>
+		<!-- 头部选项卡结束 -->
+		<div class="content">
+			<div class="swiperBox">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/fanIndex/lzdh1.png"></div>
+						<div class="swiper-slide"><img src="img/fanIndex/lzdh1.png"></div>
+						<div class="swiper-slide"><img src="img/fanIndex/lzdh1.png"></div>
+						<div class="swiper-slide"><img src="img/fanIndex/lzdh1.png"></div>
+						<div class="swiper-slide"><img src="img/fanIndex/lzdh1.png"></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<div class="rightHeadBox">
+					<div class="littlePic"><img src="img/fanDetails/rightLittlePic.png"></div>
+					<div class="littlePic"><img src="img/fanDetails/rightLittlePic.png"></div>
+					<div class="littlePic"><img src="img/fanDetails/rightLittlePic.png"></div>
+				</div>
+			</div>
+			<ul class="chooseBtn">
+				<li class="cartoonCommunity">
+					<div class="chooseIcon"><span class="iconfont icon-shu"></span></div>
+					<p>漫画社区</p>
+				</li>
+				<li class="cartoonCommunity">
+					<div class="chooseIcon"><span class="iconfont icon-tv"></span></div>
+					<p>番剧社区</p>
+				</li>
+				<li class="cartoonCommunity">
+					<div class="chooseIcon"><span class="iconfont icon-yinyue"></span></div>
+					<p>音乐社区</p>
+				</li>
+				<li class="cartoonCommunity">
+					<div class="chooseIcon"><span class="iconfont icon-icon-pencil"></span></div>
+					<p>原创社区</p>
+				</li>
+				<li class="cartoonCommunity">
+					<div class="chooseIcon"><span class="iconfont icon-B"></span></div>
+					<p>资源下载</p>
+				</li>
+				<li class="cartoonCommunity">
+					<div class="chooseIcon"><span class="iconfont icon-jiubei"></span></div>
+					<p>线下聚会</p>
+				</li>
+				<li class="cartoonCommunity">
+					<div class="chooseIcon"><span class="iconfont icon-taolun"></span></div>
+					<p>你问我答</p>
+				</li>
+			</ul>
+			<div class="mainContent">
+				<div class="mainContentTitle">
+					<img src="img/forumIndex/fire.png">
+					<p>热帖榜</p>
+					<p>HOT POST LIST</p>
+					<p>板块</p>
+					<p>作者</p>
+					<p>日期</p>
+				</div>
+				<ul class="mainContentShow">
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+					<li>
+						<p>《一人之下》漫画讨论：日语版1272在JUMP连载</p>
+						<p>2017-1-30</p>
+						<p>wsj</p>
+						<p>漫画社区</p>
+					</li>
+				</ul>
+				<div class="mainContentBtm">
+					查看全部>>>
+				</div>
+			</div>
+		</div>
+		<!-- 尾部开始 -->
+		<div class="footer">
+			<div class="footerContent">
+				<div class="footerLeft">
+					<img class="footerLogo" src="img/login/logo.png">
+					<p>首页 | 饭漫屋APP(未来) | 关于饭漫屋 | 加入我们 | 我要投稿 | 帮助FAQ | 家长监护 | 用户协议</p>
+					<p>饭漫屋(天津)科技有限公司</p>
+					<p>copyright 2016 fanmanwu.com All Rights Reserved</p>
+					<p>全部信息 饭漫屋 版权所有 未经许可 严禁转载 | 京ICP备15052388号-2 | 网络文化经营许可证 京网文[2017]2280-262号</p>
+				</div>
+				<div class="footerRight"></div>
+			</div>
+		</div>
+		<!-- 尾部结束 -->
+	</body>
+	<!-- Swiper JS -->
+	<script src="js/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+	<script src="js/341.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		// 头部菜单栏JS开始
+		var timerHead1
+		var timerHead2
+		$(".headerLinkItem").hover(function() {
+			$(this).find("p").addClass("headChangeHide")
+			$(this).find("a").find("div").addClass("headChangeShow")
+			$(this).find("div").addClass("headChangeShow")
+			$(this).siblings().find("p").removeClass("headChangeHide")
+			$(this).siblings().find("div").removeClass("headChangeShow")
+			$(this).siblings().find("a").find("div").removeClass("headChangeShow")
+			$(".menuLine").removeClass("headChangeShow")
+			$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+			clearTimeout(timerHead1)
+			clearTimeout(timerHead2)
+		}, function() {
+			timerHead1 = setTimeout(function() {
+				$(".headerLinkItem").find("a").find("div").removeClass("headChangeShow")
+				$(".headerLinkItem").find("div").removeClass("headChangeShow")
+				$(".headerLinkItem").find("p").removeClass("headChangeHide")
+			}, 300)
+		})
+		$(".linkItem").hover(function() {
+			$(".menuLine1").hide()
+			$(".menuLine").addClass("headChangeShow")
+			clearTimeout(timerHead1)
+			clearTimeout(timerHead2)
+			$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+			$(this).find("ul").addClass("headChangeShow")
+
+		}, function() {
+			timerHead2 = setTimeout(function() {
+				$(".menuLine").removeClass("headChangeShow")
+				$(".headerLinkItem").find("a").find("div").removeClass("headChangeShow")
+				$(".headerLinkItem").find("p").removeClass("headChangeHide")
+				$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+			}, 300)
+
+		})
+		// 头部菜单栏JS结束
+		// 主体JS开始
+
+		$(".chooseIcon").hover(function() {
+			$(this).parent().find("p").css({
+				"color": " #0350bd"
+			})
+		}, function() {
+			$(this).parent().find("p").css({
+				"color": "#bfbdc1"
+			})
+		})
+		$(".chooseBtn").find("li").click(function(){
+			window.location.href="forumDetails.html"
+		})
+		// 主体JS结束
+	</script>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				font-size: 14px;
+			}
+
+			.swiper-container {
+				padding-bottom: 40px;
+			}
+
+			.swiper-wrapper {}
+
+			.swiper-slide {
+				width: 900px;
+				transition-timing-function: linear;
+			}
+
+			@media only screen and (max-width:1200px) {
+				.swiper-slide {
+					width: 770px;
+				}
+			}
+
+			@media only screen and (max-width:980px) {
+				.swiper-slide {
+					width: 471px;
+				}
+			}
+
+			@media only screen and (max-height:480px) {
+				.swiper-slide {
+					width: 471px;
+				}
+			}
+
+			.swiper-slide img {
+				width: 100%;
+				border-radius: 4px;
+			}
+
+			.swiper-slide .title {
+				position: absolute;
+				transform: rotate(90deg);
+				transform-origin: left top;
+				left: -3px;
+				font-size: 11px;
+				color: rgb(102, 102, 102);
+			}
+
+			.swiper-button-next,
+			.swiper-button-prev {
+				width: 86px;
+				height: 112px;
+				background-size: 86px 112px;
+				margin-top: -56px;
+				outline: none;
+			}
+
+			.swiper-button-next {
+				background-image: url(img/cursor-next.png);
+			}
+
+			.swiper-button-prev {
+				background-image: url(img/cursor-prev.png);
+			}
+
+			.swiper-pagination-bullet {
+				background: none;
+				opacity: 1;
+				margin: 0 6px !important;
+				width: 9px;
+				height: 9px;
+				position: relative;
+				outline: none;
+				vertical-align: middle;
+			}
+
+			.swiper-pagination-bullet span {
+				width: 3px;
+				height: 3px;
+				background: #CCC;
+				display: block;
+				border-radius: 50%;
+				margin-top: 3px;
+				margin-left: 3px;
+			}
+
+			.swiper-pagination-bullet i {
+				background: #000;
+				height: 1px;
+				width: 20px;
+				position: absolute;
+				top: 4px;
+				transform: scaleX(0);
+				transform-origin: left;
+				z-index: 3;
+				transition-timing-function: linear;
+			}
+
+			.swiper-pagination-bullet-active span,
+			.swiper-pagination-bullet:hover span {
+				width: 9px;
+				height: 9px;
+				margin-top: 0;
+				margin-left: 0;
+				background: #000;
+				position: relative;
+				z-index: 1;
+			}
+
+			.swiper-pagination-bullet-active i {
+				animation: middle 6s;
+			}
+
+			.swiper-pagination-bullet:first-child.swiper-pagination-bullet-active i {
+				animation: first 6s;
+			}
+
+			.swiper-pagination-bullet:last-child.swiper-pagination-bullet-active i {
+				animation: last 6s;
+			}
+
+			@keyframes first {
+				0% {
+					transform: scaleX(0.5);
+					left: 0px;
+				}
+
+				/*091*/
+				100% {
+					transform: scaleX(1);
+					left: 2px;
+				}
+
+				/*0915*/
+			}
+
+			@keyframes last {
+				0% {
+					transform: scaleX(0.7);
+					left: -10px;
+				}
+
+				/*1090*/
+				20% {
+					transform: scaleX(0.3);
+					left: 2px;
+				}
+
+				/*090*/
+				100% {
+					transform: scaleX(0.3);
+					left: 0px;
+				}
+
+				/*090*/
+			}
+
+			@keyframes middle {
+				0% {
+					transform: scaleX(0.7);
+					left: -10px;
+				}
+
+				/*1091*/
+				20% {
+					transform: scaleX(0.45);
+					left: 2px;
+				}
+
+				/*092*/
+				100% {
+					transform: scaleX(1);
+					left: 2px;
+				}
+
+				/*0913*/
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 头部选项卡开始 -->
+		<div class="header">
+			<div class="headBox">
+				<div class="headerLogoBox">
+					<img class="headerLogo" src="img/index/logo.png">
+				</div>
+				<ul class="headerLinkUl">
+					<li class="headerLinkItem">
+						<p>首页</p>
+						<a href="index.html">
+							<div><img src="img/index/indexHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem linkItem">
+						<p>番剧</p>
+						<a href="fanIndex.html">
+							<div><img src="img/index/tv.png"></div>
+						</a>
+						<div></div>
+						<ul class="newFanLine ">
+							<a href="">
+								<li>最新更新</li>
+							</a>
+							<a href="">
+								<li>连载动画</li>
+							</a>
+							<a href="">
+								<li>完结动画</li>
+							</a>
+							<a href="">
+								<li>新番时间表</li>
+							</a>
+						</ul>
+					</li>
+					<li class="headerLinkItem linkItem">
+						<p>漫画</p>
+						<a>
+							<div><img src="img/index/bookhead.png"></div>
+						</a>
+						<div></div>
+						<ul class="newFanLine serialLine">
+							<li></li>
+							<a href="">
+								<li>热门</li>
+							</a>
+							<a href="">
+								<li>类型</li>
+							</a>
+							<a href="">
+								<li>排行</li>
+							</a>
+						</ul>
+					</li>
+					<li class="headerLinkItem">
+						<p>音乐</p>
+						<a>
+							<div><img src="img/index/musicHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem linkItem">
+						<p>漫评</p>
+						<a>
+							<div><img src="img/index/evaluationHead.png"></div>
+						</a>
+						<div></div>
+						<ul class="newFanLine evaluationLine">
+							<li></li>
+							<a href="">
+								<li>番剧</li>
+							</a>
+							<a href="">
+								<li>漫画</li>
+							</a>
+							<a href="">
+								<li>专题</li>
+							</a>
+						</ul>
+					</li>
+					<li class="headerLinkItem">
+						<p>商城</p>
+						<a>
+							<div><img src="img/index/shopHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem">
+						<p>论坛</p>
+						<a href="forumIndex.html">
+							<div><img src="img/index/luntanHead.png"></div>
+						</a>
+					</li>
+					<li class="headerLinkItem">
+						<p>排行</p>
+						<a>
+							<div><img src="img/index/paihangHead.png"></div>
+						</a>
+					</li>
+				</ul>
+				<div class="headBoxRight">
+					<a href="login.html" class="loginAndRegister">登录/注册</a>
+					<div class="search">
+						<div class="searchBtn"><img style="margin: 0 0 0 4px;" src="img/index/search.png"></div>
+						<input class="searchContent" type="text" placeholder="作者、歌手、新番、" />
+					</div>
+				</div>
+			</div>
+			<div class="menuLine">
+			</div>
+			<div class="menuLine1"></div>
+		</div>
+		<!-- 头部选项卡结束 -->
+		<!-- 主要内容开始 -->
+		<div class="content">
+			<div class="banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="title">#01 _ The entrance</div><img data-src="img/index/picture-1.jpg" data-srcset="img/1-2x.jpg 2x"
+							 class="swiper-lazy">
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="title">#02 _ A tatami-matted hallway</div><img data-src="img/index/picture-2.jpg" data-srcset="img/2-2x.jpg 2x"
+							 class="swiper-lazy">
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="title">#03 _ A guestroom</div><img data-src="img/index/picture-3.jpg" data-srcset="img/index/picture-3-2x.jpg 2x"
+							 class="swiper-lazy">
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="title">#04 _ The ochanoma lounge</div><img data-src="img/index/picture-4.jpg" data-srcset="img/index/picture-4-2x.jpg 2x"
+							 class="swiper-lazy">
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="title">#05 _ Reception</div><img data-src="img/index/picture-5.jpg" data-srcset="img/index/picture-5-2x.jpg 2x"
+							 class="swiper-lazy">
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="title">#06 _ The entrance garden</div><img data-src="img/index/picture-6.jpg" data-srcset="img/index/picture-6-2x.jpg 2x"
+							 class="swiper-lazy">
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+			<div class="newFan">
+				<div class="newFanTop">
+					<img class="newFanTv" src="img/index/newFan-TV.png">
+					<p class="newFanTitle">最新番剧</p>
+					<p class="getMoreFan">MORE</p>
+				</div>
+				<ul class="sTitleNewFanList">
+					<li class="recommend checked">为你推荐</li>
+					<li class="sunday">周日</li>
+					<li class="monday">周一</li>
+					<li class="tuesday">周二</li>
+					<li class="wednesday">周三</li>
+					<li class="thursday">周四</li>
+					<li class="friday">周五</li>
+					<li class="saturday">周六</li>
+				</ul>
+				<ul class="newFanList">
+				</ul>
+			</div>
+			<div class="serialFan">
+				<div class="newFanTop">
+					<img class="newFanTv" src="img/index/serial.png">
+					<p class="newFanTitle">连载漫画</p>
+					<p class="getMoreFan">MORE</p>
+				</div>
+				<ul class="sTitleSerialFanList">
+					<li class="recommendSerial checked">为你推荐</li>
+					<li class="serialFan1">冒险热血</li>
+					<li class="serialFan2">未来科幻</li>
+					<li class="serialFan3">少女爱情</li>
+					<li class="serialFan4">心理悬疑</li>
+					<li class="serialFan5">完结经典</li>
+				</ul>
+				<ul class="serialFanMainList">
+				</ul>
+			</div>
+
+			<div class="musicFan">
+				<div class="newFanTop">
+					<img style="margin-top: 10px;" class="newFanTv" src="img/index/music.png">
+					<p class="newFanTitle">饭漫音乐</p>
+					<p class="getMoreFan">MORE</p>
+				</div>
+				<ul class="sTitleMusicFanList">
+					<li class="recommendMusic checked">为你推荐</li>
+					<li class="inland">内地</li>
+					<li class="HKTW">港台</li>
+					<li class="EUUS">欧美</li>
+					<li class="Japan">日本</li>
+					<li class="Korea">韩国</li>
+				</ul>
+				<ul class="musicFanList">
+
+
+				</ul>
+			</div>
+
+			<div class="evaluationFan">
+				<div class="newFanTop">
+					<img style="margin-top: 15px;" class="newFanTv" src="img/index/evaluation.png">
+					<p class="newFanTitle">特色漫评</p>
+					<p class="getMoreFan">MORE</p>
+				</div>
+				<ul class="sTitleEvaluationFanList">
+					<li class="recommendEvaluation checked">为你推荐</li>
+					<li class="evaluation1">专题</li>
+					<li class="evaluation2">番剧</li>
+					<li class="evaluation3">漫画</li>
+					<li class="evaluation4">音乐</li>
+					<li class="evaluation5">娱乐吐槽</li>
+				</ul>
+				<ul class="evaluationFanList">
+
+
+				</ul>
+			</div>
+
+		</div>
+
+
+		<!-- 主要内容结束 -->
+		<!-- 尾部开始 -->
+		<div class="footer">
+			<div class="footerContent">
+				<div class="footerLeft">
+					<img class="footerLogo" src="img/index/logo.png">
+					<p>首页 | 饭漫屋APP(未来) | 关于饭漫屋 | 加入我们 | 我要投稿 | 帮助FAQ | 家长监护 | 用户协议</p>
+					<p>饭漫屋(天津)科技有限公司</p>
+					<p>copyright 2016 fanmanwu.com All Rights Reserved</p>
+					<p>全部信息 饭漫屋 版权所有 未经许可 严禁转载 | 京ICP备15052388号-2 | 网络文化经营许可证 京网文[2017]2280-262号</p>
+				</div>
+				<div class="footerRight"></div>
+			</div>
+		</div>
+		<!-- 尾部结束 -->
+	</body>
+	<!-- 轮播图js开始 -->
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			speed: 700,
+			allowTouchMove: false,
+			lazy: {
+				loadPrevNext: true,
+				loadPrevNextAmount: 3,
+			},
+			centeredSlides: true,
+			spaceBetween: 50,
+			slidesOffsetBefore: 40,
+			loop: true,
+			slidesPerView: 'auto',
+			on: {
+				slideChangeTransitionEnd: function() {
+					this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-60px, 0, 0)');
+				},
+				slideChangeTransitionStart: function() {
+					this.slides.transition(this.params.speed).transform('translate3d(0, 0, 0)');
+				},
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+				renderBullet: function(index, className) {
+					return '<div class="' + className + '"><span></span><i></i></div>';
+				},
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+		window.onresize = function() {
+			swiper.update();
+		}
+	</script>
+	<!-- 轮播图js结束 -->
+	<script src="js/341.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			//头部菜单栏JS开始
+			//$(".a").stop().delay(time).fadeIn()
+			var timerHead1
+			var timerHead2
+			$(".headerLinkItem").hover(function() {
+				$(this).find("p").addClass("headChangeHide")
+				$(this).find("a").find("div").addClass("headChangeShow")
+				$(this).find("div").addClass("headChangeShow")
+				$(this).siblings().find("p").removeClass("headChangeHide")
+				$(this).siblings().find("div").removeClass("headChangeShow")
+				$(this).siblings().find("a").find("div").removeClass("headChangeShow")
+				$(".menuLine").removeClass("headChangeShow")
+				$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+				clearTimeout(timerHead1)
+				clearTimeout(timerHead2)
+			}, function() {
+				timerHead1 = setTimeout(function() {
+					$(".headerLinkItem").find("a").find("div").removeClass("headChangeShow")
+					$(".headerLinkItem").find("div").removeClass("headChangeShow")
+					$(".headerLinkItem").find("p").removeClass("headChangeHide")
+				}, 300)
+			})
+			$(".linkItem").hover(function() {
+				$(".menuLine1").hide()
+				$(".menuLine").addClass("headChangeShow")
+				clearTimeout(timerHead1)
+				clearTimeout(timerHead2)
+				$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+				$(this).find("ul").addClass("headChangeShow")
+
+			}, function() {
+				timerHead2 = setTimeout(function() {
+					$(".menuLine").removeClass("headChangeShow")
+					$(".headerLinkItem").find("a").find("div").removeClass("headChangeShow")
+					$(".headerLinkItem").find("p").removeClass("headChangeHide")
+					$(".headerLinkItem").find("ul").removeClass("headChangeShow")
+				}, 300)
+
+			})
+			//头部菜单栏JS结束
+			// 新番JS开始
+			//动态生成开始
+			var fanDate = "recommend";
+			getNewFan(fanDate)
+			$(".sTitleNewFanList").find("li").click(function() {
+				$(this).addClass("checked").siblings().removeClass("checked");
+				$(".newFanList").empty();
+				var fanDateArr = $(this).attr("class").split(" ")
+				fanDate = fanDateArr[0];
+				getNewFan(fanDate);
+			})
+
+			function getNewFan(fanDate) {
+				$.ajax({
+					url: 'DATA/newFan.json',
+					type: 'get', //HTTP请求类型
+					async: true,
+					success: function(data) {
+						for (var i = 0; i < data[fanDate].length; i++) {
+							$li = $("<li></li>");
+							$img = $("<img src='" + data[fanDate][i].pic + "' >")
+							$pTitle = $("<p>" + data[fanDate][i].title + "</p>")
+							$pContent = $("<p>" + data[fanDate][i].content + "&nbsp;<span>" + data[fanDate][i].num + "</span></p>")
+							$li.append($img, $pTitle, $pContent)
+							$(".newFanList").append($li)
+						}
+					},
+					error: function(xhr, type, errorThrown) {
+						console.log(xhr, type, errorThrown)
+					}
+				});
+			}
+			//动态生成结束
+			//交互开始
+
+			// 新番JS结束
+			//--------------------------------------------------------
+			// 连载漫画JS开始
+
+			fanDate = "recommendSerial"
+			getSerialFan(fanDate)
+			$(".sTitleSerialFanList").find("li").click(function() {
+				$(this).addClass("checked").siblings().removeClass("checked");
+				$(".serialFanMainList").empty();
+				var fanDateArr = $(this).attr("class").split(" ")
+				fanDate = fanDateArr[0];
+				getSerialFan(fanDate);
+			})
+
+			function getSerialFan(fanDate) {
+				$.ajax({
+					url: 'DATA/serialFan.json',
+					type: 'get', //HTTP请求类型
+					async: true,
+					success: function(data) {
+						for (var i = 0; i < data[fanDate].length; i++) {
+							$li = $("<li></li>");
+							$img = $("<img src='" + data[fanDate][i].pic + "' >")
+							$pTitle = $("<p>" + data[fanDate][i].title + "</p>")
+							$pContent = $("<p>" + data[fanDate][i].content + "&nbsp;<span>" + data[fanDate][i].num + "</span></p>")
+							$li.append($img, $pTitle, $pContent)
+							$(".serialFanMainList").append($li)
+						}
+					},
+					error: function(xhr, type, errorThrown) {
+						console.log(xhr, type, errorThrown)
+					}
+				});
+			}
+			//连载漫画JS结束
+			//-----------------------------------------------------
+			//饭漫音乐JS开始
+
+			fanDate = "recommendMusic"
+			getMusicFan(fanDate)
+			$(".sTitleMusicFanList").find("li").click(function() {
+				$(this).addClass("checked").siblings().removeClass("checked");
+				$(".musicFanList").empty();
+				var fanDateArr = $(this).attr("class").split(" ")
+				fanDate = fanDateArr[0];
+				getMusicFan(fanDate);
+			})
+
+			function getMusicFan(fanDate) {
+				$.ajax({
+					url: 'DATA/musicFan.json',
+					type: 'get', //HTTP请求类型
+					async: true,
+					success: function(data) {
+						for (var i = 0; i < data[fanDate].length; i++) {
+							$li = $("<li></li>");
+							$img = $("<img src='" + data[fanDate][i].pic + "' >")
+							$pTitle = $("<p>" + data[fanDate][i].title + "</p>")
+							$pContent = $("<p>" + data[fanDate][i].content + "</p>")
+							$li.append($img, $pTitle, $pContent)
+							$(".musicFanList").append($li)
+						}
+					},
+					error: function(xhr, type, errorThrown) {
+						console.log(xhr, type, errorThrown)
+					}
+				});
+			}
+			//饭漫音乐JS结束
+			//--------------------------------------------
+			//漫评JS开始
+			fanDate = "recommendEvaluation"
+			getEvaFan(fanDate)
+			$(".sTitleEvaluationFanList").find("li").click(function() {
+				$(this).addClass("checked").siblings().removeClass("checked");
+				$(".evaluationFanList").empty();
+				var fanDateArr = $(this).attr("class").split(" ")
+				fanDate = fanDateArr[0];
+				getEvaFan(fanDate);
+			})
+
+			function getEvaFan(fanDate) {
+				$.ajax({
+					url: 'DATA/evaFan.json',
+					type: 'get', //HTTP请求类型
+					async: true,
+					success: function(data) {
+						for (var i = 0; i < data[fanDate].length; i++) {
+							$li = $("<li><div class='evaContent'><img src='" + data[fanDate][i].pic + "' ><p>" + data[fanDate][i].title +
+								"</p><p><span class='iconfont icon-pinglun'></span></p><div><div style='width:" +
+								data[fanDate][i].score * 0.1 * 60 +
+								"px;' class='bg'></div><img src='img/index/stars.png' ></div> <p>" +
+								data[fanDate][i].score + "分</p><img src='" +
+								data[fanDate][i].picHead + "' ><p>" + data[fanDate][i].username + "</p><p>" + data[fanDate][i].time +
+								"</p><p>" + data[fanDate][i].textTitle + "</p><p>" + data[fanDate][i].textContent + "</p></div></li>");
+							$(".evaluationFanList").append($li)
+						}
+					},
+					error: function(xhr, type, errorThrown) {
+						console.log(xhr, type, errorThrown)
+					}
+				});
+			}
+			//漫评JS结束
+
+
+		})
+	</script>
+</html>

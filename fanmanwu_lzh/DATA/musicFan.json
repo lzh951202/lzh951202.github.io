@@ -1,0 +1,70 @@
+{
+
+	"recommendMusic": [{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		},
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		},
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		},
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		}
+	],
+	"inland":[
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		}
+	],
+	"HKTW":[
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		},
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		}
+	],
+	"EUUS":[
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		}
+	],
+	"Japan":[
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		},
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		}
+	],
+	"Korea":[
+		{
+			"pic": "img/index/music1.png",
+			"title": "ブルーバード（青鸟）",
+			"content": "生物股长"
+		}
+	]
+
+}
